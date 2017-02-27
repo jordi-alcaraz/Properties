@@ -313,6 +313,57 @@
 	},
 	{
 		"name": "mpi"
+		"children":[{
+			"name": "EAGERLIMITDEPENDENT",
+			"children": [{
+				"name": "PSC_MPI_MSG_P2P_TOT"
+			},
+			{
+				"name": "PSC_MPI_MSG_P2P_THR"
+			},
+			{
+				"name": "PSC_MPI_MSG_FREQ_2K"
+			},
+			{
+				"name": "PSC_MPI_MSG_FREQ_4K"
+			},
+			{
+				"name": "PSC_MPI_MSG_FREQ_8K"
+			},
+			{
+				"name": "PSC_MPI_MSG_FREQ_16K"
+			},
+			{
+				"name": "PSC_MPI_MSG_FREQ_32K"
+			},
+			{
+				"name": "PSC_MPI_MSG_FREQ_64K"
+			}]
+		},
+		{
+			"name": "MPITIME",
+			"children": [{
+				"name": "PSC_EXECUTION_TIME: Execution time"
+			}]
+		},
+		{
+			"name": "MPIPROP: MpiLate ?????????????????????",
+			"children":[{
+				"name": "PSC_EXECUTION_TIME: Execution time"
+			}]
+		},
+		{
+			"name": "OVERLOADEDMASTER: ",
+			"children":[{
+				"PSC_EXECUTION_TIME"
+			}]
+		},
+		{
+			"name": "MPIPROP: Check execcive MPI time due to large/small messages",
+			"children":[{
+				"name": "PSC_EXECUTION_TIME"
+			}]
+		}]
 	},
 	{
 		"name": "OpenCL"
