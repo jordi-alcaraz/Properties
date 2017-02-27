@@ -312,7 +312,7 @@
 		}]
 	},
 	{
-		"name": "mpi"
+		"name": "mpi",
 		"children":[{
 			"name": "EAGERLIMITDEPENDENT",
 			"children": [{
@@ -355,7 +355,7 @@
 		{
 			"name": "OVERLOADEDMASTER: ",
 			"children":[{
-				"PSC_EXECUTION_TIME"
+				"name":"PSC_EXECUTION_TIME"
 			}]
 		},
 		{
