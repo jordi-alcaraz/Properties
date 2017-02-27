@@ -159,43 +159,33 @@
 			},
 			{
 				"name": "PSC_PAPI_BR_INS"
-			}
 			},
 			{
 				"name": "PSC_PAPI_TOT_CYC"
-			}
 			},
 			{
 				"name": "PSC_PAPI_L2_DCH"
-			}
 			},
 			{
 				"name": "PSC_PAPI_L2_DCA"
-			}
 			},
 			{
 				"name": "PSC_PAPI_L3_DCA"
-			}
 			},
 			{
 				"name": "PSC_PAPI_L2_ICH"
-			}
 			},
 			{
 				"name": "PSC_PAPI_L2_ICR"
-			}
 			},
 			{
 				"name": "PSC_PAPI_L3_TCA"
-			}
 			},
 			{
 				"name": "PSC_PAPI_FP_OPS"
-			}
 			},
 			{
 				"name": "PSC_EXECUTION_TIME"
-			}
 			},
 			{
 				"name": "PSC_PAPI_TOT_INS"
