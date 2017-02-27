@@ -192,7 +192,31 @@
 		}]
 	},
 	{
-		"name": "Energy"
+		"name": "Energy",
+		"children":[{
+			"name":"ENERGY_CONSUMPTION: Cost of Ownership property",
+			"children":[{
+				"name": "PSC_EXECUTION_TIME: Execution time"
+			},
+			{
+				"name": "PSC_TASKS_CREATED: ???"
+			}]
+		},
+		{
+			"name": "ENERGY_CONSUMPTION: Energy consumption property",
+			"children": [{
+				"name": "PSC_ENOPT_ALL_CORES: Provides energy consumption of all cores on a node"
+			}]
+		},
+		{
+			"name": "ENERGY_INEFFICIENT",
+			"children":[{
+				"name": "PSC_ENOPT_ALL_CORES: Provides energy consumption of all cores on a node"
+			},
+			{
+				"name": "PSC_PAPI_FP_INS: Floating point instructions"
+			}]
+		}]
 	},
 	{
 		"name": "GPUTesting"
