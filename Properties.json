@@ -1,0 +1,142 @@
+{
+	"name":"Classes",
+	"children": [{
+		"name": "BenchmarkingProps",
+		"children": [{
+			"name": "BRANCH_MISPREDICTION",
+			"children": [{
+				"name": "PSC_PAPI_BR_MSP: Conditional branch instructions mispredicted"
+			},
+			{
+				"name": "PSC_PAPI_BR_CN: Conditional branch instructions"
+			}]
+		},
+		{
+			"name":"BENCHALLPROPS",
+			"children":[{
+				"name":"PSC_PAPI_BR_CN: Conditional branch instructions"
+			},
+			{
+				"name":"PSC_PAPI_BR_INS: Branch instructions"
+			},
+			{
+				"name":"PSC_PAPI_BR_MSP: Conditional branch instructions mispredicted"
+			},
+			{
+				"name":"PSC_PAPI_FP_OPS: Floating point operations"
+			},
+			{
+				"name":"PSC_PAPI_INT_INS: Integer instructions"
+			},
+			{
+				"name":"PSC_PAPI_L1_DCA: Level 1 data cache accesses"
+			},
+			{
+				"name":"PSC_PAPI_L1_DCH: Level 1 data cache hits"
+			},
+			{
+				"name":"PSC_PAPI_L1_DCM: Level 1 data cache misses"
+			},
+			{
+				"name":"PSC_PAPI_L2_DCA: Level 2 data cache accesses"
+			},
+			{
+				"name":"PSC_PAPI_L2_DCH: Level 2 data cache hits"
+			},
+			{
+				"name":"PSC_PAPI_L2_DCM: Level 2 data cache misses"
+			},
+			{
+				"name":"PSC_PAPI_L3_DCA: Level 3 data cache accesses"
+			},
+			{
+				"name":"PSC_PAPI_L3_DCH: Level 3 data cache hits"
+			},
+			{
+				"name":"PSC_PAPI_L3_DCM: Level 3 data cache misses"
+			},
+			{
+				"name":"PSC_PAPI_LST_INS: A"
+			},
+			{
+				"name":"PSC_PAPI_RES_STL: A"
+			},
+			{
+				"name":"PSC_PAPI_TLB_TL: A"
+			},
+			{
+				"name":"PSC_PAPI_TOT_CYC: A"
+			},
+			{
+				"name":"PSC_PAPI_TOT_IIS: A"
+			},
+			{
+				"name":"PSC_PAPI_TOT_INS: A"
+			}]
+			
+		},
+		{
+			"name": "L1D: L1 Data Cache Misses Ratio Property",
+			"children":[
+			{
+				"name": "PSC_PAPI_TOT_CYC: Total cycles"
+			},
+			{
+				"name": "PSC_PAPI_L1_DCM: Level 1 data cache misses"
+			},
+			{
+				"name": "PSC_PAPI_L1_DCH: Level 1 data cache hits"
+			}]
+		},
+		{
+			"name": "L2MISSES: L2 Cache Miss Ratio Property",
+			"children":[
+			{
+				"name": "PSC_PAPI_TOT_CYC: Total cycles"
+			},
+			{
+				"name": "PSC_PAPI_L2_TCM: Level 2 cache misses"
+			},
+			{
+				"name": "PSC_PAPI_L2_TCH: Level 2 total cache hits"
+			}]
+		},
+		{
+			"name": "EXECTIMEIMPORTANCE: Return the execution time of the region in thread 0 as severity.",
+			"children":[
+			{
+				"name": "PSC_EXECUTION_TIME"
+			}]
+		}]
+	},
+	{
+		"name": "Energy"
+	},
+	{
+		"name": "GPUTesting"
+	},
+	{
+		"name": "mpi"
+	},
+	{
+		"name": "OpenCL"
+	},
+	{
+		"name": "openmp"
+	},
+	{
+		"name": "overhead"
+	},
+	{
+		"name": "Pipeline"
+	},
+	{
+		"name": "Skeleton"
+	},
+	{
+		"name": "tuning"
+	},
+	{
+		"name": "Westmere"
+	}]
+}
