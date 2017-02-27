@@ -209,12 +209,54 @@
 			}]
 		},
 		{
-			"name": "ENERGY_INEFFICIENT",
+			"name": "ENERGY_INEFFICIENT: Return energy spent per floating point instruction, indicating energy inefficient regions, as severity.",
 			"children":[{
 				"name": "PSC_ENOPT_ALL_CORES: Provides energy consumption of all cores on a node"
 			},
 			{
 				"name": "PSC_PAPI_FP_INS: Floating point instructions"
+			}]
+		},
+		{
+			"name": "MEMORY_BOUND: Return number of L3 cache misses per FLOP, indicating memory bound regions, as severity.",
+			"children":[{
+				"name": "PSC_PAPI_L3_TCM: Level 3 total cache misses"
+			},
+			{
+				"name": "PSC_PAPI_FP_INS: Floating point instructions"
+			}]
+		},
+		{
+			"name": "POWER_USED",
+			"children": [{
+				"name": "PSC_ENOPT_ALL_CORES: Provides energy consumption of all cores on a node"
+			},
+			{
+				"name": "PSC_EXECUTION_TIME: Execution time"
+			}]
+		},
+		{
+			"name":"ENERGY_SUITED: Return the execution time of the region in thread 0 as severity.",
+			"children": [{
+				"name" : "PSC_EXECUTION_TIME: Execution time"
+			},
+			{
+				"name": "PSC_PAPI_L3_TCM: Level 3 cache total cache misses"
+			},
+			{
+				"name": "PSC_PAPI_L2_TCM: Level 2 total cache misses"
+			},
+			{
+				"name": "PSC_PAPI_TOT_CYC: Total cycles"
+			},
+			{
+				"name": "PSC_PAPI_TOT_INS: Instructions completed"
+			},
+			{
+				"name": "PSC_ENOPT_ALL_CORES:  Provides energy consumption of all cores on a node."
+			},
+			{
+				"name": "PSC_ENOPT_ALL_DRAMS:  Provides energy consumption of DRAM modules on a node."
 			}]
 		}]
 	},
