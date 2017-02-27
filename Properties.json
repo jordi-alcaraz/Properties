@@ -107,6 +107,99 @@
 			{
 				"name": "PSC_EXECUTION_TIME"
 			}]
+		},
+		{
+			"name": "PERFORMANCECOUNTERS: Performance counters as program signature.",
+			"children":[
+			{
+				"name": "PSC_PAPI_L1_DCM"
+			},
+			{
+				"name": "PSC_PAPI_L1_ICM"
+			},
+			{
+				"name": "PSC_PAPI_L2_DCM"
+			},
+			{
+				"name": "PSC_PAPI_L3_DCM"
+			},
+			{
+				"name": "PSC_PAPI_L1_TCM"
+			},
+			{
+				"name": "PSC_PAPI_L2_TCM"
+			},
+			{
+				"name": "PSC_PAPI_L3_TCM"
+			},
+			{
+				"name": "PSC_PAPI_TLB_DM"
+			},
+			{
+				"name": "PSC_PAPI_TLB_IM"
+			},
+			{
+				"name": "PSC_PAPI_BR_CN"
+			},
+			{
+				"name": "PSC_PAPI_BR_MSP"
+			},
+			{
+				"name": "PSC_PAPI_TOT_INS"
+			},
+			{
+				"name": "PSC_PAPI_FP_INS"
+			},
+			{
+				"name": "PSC_PAPI_LD_INS"
+			},
+			{
+				"name": "PSC_PAPI_SR_INS"
+			}
+			},
+			{
+				"name": "PSC_PAPI_BR_INS"
+			}
+			},
+			{
+				"name": "PSC_PAPI_TOT_CYC"
+			}
+			},
+			{
+				"name": "PSC_PAPI_L2_DCH"
+			}
+			},
+			{
+				"name": "PSC_PAPI_L2_DCA"
+			}
+			},
+			{
+				"name": "PSC_PAPI_L3_DCA"
+			}
+			},
+			{
+				"name": "PSC_PAPI_L2_ICH"
+			}
+			},
+			{
+				"name": "PSC_PAPI_L2_ICR"
+			}
+			},
+			{
+				"name": "PSC_PAPI_L3_TCA"
+			}
+			},
+			{
+				"name": "PSC_PAPI_FP_OPS"
+			}
+			},
+			{
+				"name": "PSC_EXECUTION_TIME"
+			}
+			},
+			{
+				"name": "PSC_PAPI_TOT_INS"
+			}]
 		}]
 	},
 	{
