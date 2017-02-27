@@ -261,7 +261,55 @@
 		}]
 	},
 	{
-		"name": "GPUTesting"
+		"name": "GPUTesting",
+		"children":[{
+			"name": "CUDA_ACHIEVEDOCCUPANCY: Total number of cycles a multiprocessor has at least one active warp",
+			"children":[{
+				"name": "PSC_CUPTI_DD_ACTIVE_CYCLES"
+			},
+			{
+				"name": "PSC_CUPTI_DD_ACTIVE_WARPS"
+			}]
+		},
+		{
+			"name": "CUDA_ACTIVECYCLES: total number of cycles a multiprocessor has at least one active warp",
+			"children":[{
+				"name": "PSC_CUPTI_DD_ACTIVE_CYCLES"
+			}]
+		},
+		{
+			"name": "CUDA_BRANCHEFFICIENCY: GPU Ratio of non-divergent branches to total branches property",
+			"children":[{
+				"name": "PSC_CUPTI_DD_DIVERGENT_BRANCH"
+			},
+			{
+				"name": "PSC_CUPTI_DD_BRANCH"
+			}]
+		},
+		{
+			"name": "CUDA_BYTESTRANSFERED: amount of bytes transfered between host and device",
+			"children":[{
+				"name": "PSC_CUDA_BYTES_TRANSFERRED"
+			}]
+		},
+		{
+			"name": "CUDA_EXECUTIONTIME: kernel execution time property",
+			"children": [{
+				"name": "PSC_CUDA_KERNEL_EXECUTION_TIME"
+			}]
+		},
+		{
+			"name": "CUDA_INSTRUCTIONSEXECUTED: Number of instructions executed on GPU",
+			"children":[{
+				"name": "PSC_CUPTI_DD_INST_EXECUTED"
+			}]
+		},
+		{
+			"name": "CUDA_TRANSFERTIME: Time to transfer data from host to device property",
+			"children": [{
+				"name": "PSC_CUDA_TRANSFER_EXECUTION_TIME"
+			}]
+		}]
 	},
 	{
 		"name": "mpi"
