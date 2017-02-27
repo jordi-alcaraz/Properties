@@ -366,10 +366,43 @@
 		}]
 	},
 	{
-		"name": "OpenCL"
+		"name": "OpenCL",
+		"children":[{
+			"name": "OPENCL_KERNELEXECTIME: total amount of time spent on kernel execution",
+			"children": [{
+				"name": "PSC_OPENCL_KERNEL_EXECUTION_TIME"
+			}]
+		}]
 	},
 	{
-		"name": "openmp"
+		"name": "openmp",
+		"children":[{
+			"name": " CRITICALREGIONOVERHEAD_OMPREGION: critical section overhead",
+			"children": [{
+				"name": "PSC_EXECUTION_TIME"				
+			},
+			{
+				"name": "PSC_CRITICAL_REGION_CYCLE"
+			}]
+		},
+		{
+			"name": " ATOMICREGIONOVERHEAD_OMPREGION: atomic section overhead",
+			"children": [{
+				"name": "PSC_EXECUTION_TIME"				
+			},
+			{
+				"name": "PSC_CRITICAL_REGION_CYCLE"
+			}]
+		},
+		{
+			"name": " FLUSHREGIONOVERHEAD_OMPREGION: flushed section overhead",
+			"children": [{
+				"name": "PSC_EXECUTION_TIME"				
+			},
+			{
+				"name": "PSC_CRITICAL_REGION_CYCLE"
+			}]
+		}]
 	},
 	{
 		"name": "overhead"
