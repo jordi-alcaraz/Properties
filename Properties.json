@@ -402,6 +402,15 @@
 			{
 				"name": "PSC_CRITICAL_REGION_CYCLE"
 			}]
+		},
+		{
+			"name": " IMBALANCE_IN_ORDERED_LOOP_OMP: Imbalance in ORDERED loop",
+			"children": [{
+				"name": "PSC_EXECUTION_TIME"				
+			},
+			{
+				"name": "PSC_CRITICAL_REGION_CYCLE"
+			}]
 		}]
 	},
 	{
