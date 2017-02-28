@@ -811,13 +811,76 @@
       ]
     },
     {
-      "name": "Pipeline"
+      "name": "Pipeline",
+      "children":[
+      	{
+      		"name": "PIPESTAGEEXECTIME: Execution time of pipeline stage for Vienna pattern",
+      		"children":[
+      			{
+      				"name":"PSC_PIPE_STAGEEXEC_TIME"
+      			}
+      		]
+      	},
+      	{
+      		"name": "PIPESTAGEBUFWAITTIME: Buffer wait time of pipeline stage for Vienna pattern",
+      		"children": [
+      			{
+      				"name": "PSC_PIPE_BUFOUTP_TIME"
+      			}
+      		]
+      	},
+      	{
+      		"name": "PIPEEXECTIME: Execution time of pipeline for Vienna pattern",
+      		"children": [
+      			{
+      				"name": "PSC_PIPE_EXEC_TIME"
+      			}
+      		]
+      	}
+      ]
     },
     {
-      "name": "Skeleton"
-    },
-    {
-      "name": "tuning"
+      "name": "tuning",
+      "children":[
+      	{
+      		"name": "EXECTIME: Return the execution time of the region in thread 0",
+      		"children":[
+      			{
+      				"name": "PSC_EXECUTION_TIME"
+      			}
+      		]
+      	},
+      	{
+      		"name": "HPCCONDITIONAL: Returns important metrics used as criterium on the plugin selection process in adaptive-sequence plugin",
+      		"children":[
+      			{
+      				"name": "PSC_EXECUTION_TIME"
+      			},
+      			{
+      				"name": "PSC_INSTANCES"
+      			},
+      			{
+      				"name": "PSC_MPI"
+      			},
+      			{
+      				"name": "PSC_PAPI_TOT_INS"
+      			},
+      			{
+      				"name": "PSC_ENOPT_ALL_CORES"
+      			},
+      			{
+      				"name": "PSC_ENOPT_ALL_DRAMS"
+      			}
+      		]
+      	},
+      	{
+      		"name": "ACTIVECYCLESOBJECTIVE: total number of cycles a multiprocessor has at least one active warp",
+      		"children":[{
+      			"name": "PSC_CUPTI_DD_ACTIVE_CYCLES"
+      		}
+      	]
+      	}
+      ]
     },
     {
       "name": "Westmere"
