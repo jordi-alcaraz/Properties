@@ -551,7 +551,7 @@
 			"name": " OMPFORREGIONEXECTIME: Hot OpenMP region execution time in the application ",
 			"children": [{
 				"name": "PSC_OMP_DO_REGION_CYCLE"				
-			},]
+			}]
 		},
 		{
 			"name": " PARALLELREGIONEXECTIME: Hot OpenMP region execution time in the application ",
