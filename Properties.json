@@ -431,12 +431,132 @@
 			}]
 		},
 		{
-			"name": " LOADIMBALANCEPARALLELREGION: Load Imbalance in parallel region",
+			"name": " LOADIMBALANCEPARALLELREGION: Load Imbalance in Parallel Region",
 			"children": [{
 				"name": "PSC_EXECUTION_TIME"				
 			},
 			{
 				"name": "PSC_IMPLICIT_BARRIER_TIME"
+			}]
+		},
+		{
+			"name": " LOADIMBALANCEPARALLELLOOP: Load Imbalance in Parallel loop",
+			"children": [{
+				"name": "PSC_EXECUTION_TIME"				
+			},
+			{
+				"name": "PSC_IMPLICIT_BARRIER_TIME"
+			}]
+		},
+		{
+			"name": " LOADIMBALANCEWORKSHAREREGION: Load Imbalance in Workshare Region",
+			"children": [{
+				"name": "PSC_EXECUTION_TIME"				
+			},
+			{
+				"name": "PSC_IMPLICIT_BARRIER_TIME"
+			}]
+		},
+		{
+			"name": " LOADIMBALANCEPARALLELSECTION: Load Imbalance in Parallel Section",
+			"children": [{
+				"name": "PSC_EXECUTION_TIME"				
+			},
+			{
+				"name": "PSC_IMPLICIT_BARRIER_TIME"
+			}]
+		},
+		{
+			"name": " LOADIMBALANCEOMPREGION: Load Imbalance in OMP Region",
+			"children": [{
+				"name": "PSC_EXECUTION_TIME"				
+			},
+			{
+				"name": "PSC_IMPLICIT_BARRIER_TIME"
+			}]
+		},
+		{
+			"name": " STARTUPSHUTDOWNOVERHEAD: Parallel Region Start up and Shutdown overhead",
+			"children": [{
+				"name": "PSC_EXECUTION_TIME"				
+			},
+			{
+				"name": "PSC_PARALLEL_REGION_CYCLE"
+			},
+			{
+				"name": "PSC_PARALLEL_REGION_BODY_CYCLE"
+			}]
+		},
+		{
+			"name": " SERIALIZATIONCRITICALREGIONOVERHEAD_OMPREGION: Serialization in Critical region",
+			"children": [{
+				"name": "PSC_EXECUTION_TIME"				
+			},
+			{
+				"name": "PSC_CRITICAL_REGION_CYCLE"
+			}]
+		},
+		{
+			"name": " SEQUENTIALINMASTER: Sequential Computation in Master Region",
+			"children": [{
+				"name": "PSC_EXECUTION_TIME"				
+			},
+			{
+				"name": "PSC_MASTER_BODY_CYCLE"
+			}]
+		},
+		{
+			"name": " SEQUENTIALINORDEREDLOOP: Sequential Computation in Ordered Loop ",
+			"children": [{
+				"name": "PSC_EXECUTION_TIME"				
+			},
+			{
+				"name": "PSC_ORDERED_REGION_CYCLE"
+			}]
+		},
+		{
+			"name": " SEQUENTIALINSINGLE: Sequential Computation in Single Region ",
+			"children": [{
+				"name": "PSC_EXECUTION_TIME"				
+			},
+			{
+				"name": "PSC_SINGLE_REGION_CYCLE"
+			}]
+		},
+		{
+			"name": " USERREGIONEXECTIME: Hot OpenMP region execution time in the application ",
+			"children": [{
+				"name": "PSC_EXECUTION_TIME"				
+			}]
+		},
+		{
+			"name": " MAINREGIONEXECTIME: Hot OpenMP region execution time in the application ",
+			"children": [{
+				"name": "PSC_EXECUTION_TIME"				
+			}]
+		},
+		{
+			"name": " CALLREGIONEXECTIME: Hot OpenMP region execution time in the application ",
+			"children": [{
+				"name": "PSC_EXECUTION_TIME"				
+			}]
+		},
+		{
+			"name": " SUBREGIONEXECTIME: Hot OpenMP region execution time in the application ",
+			"children": [{
+				"name": "PSC_EXECUTION_TIME"				
+			}]
+		},
+		{
+			"name": " OMPFORREGIONEXECTIME: Hot OpenMP region execution time in the application ",
+			"children": [{
+				"name": "PSC_OMP_DO_REGION_CYCLE"				
+			},]
+		},
+		{
+			"name": " PARALLELREGIONEXECTIME: Hot OpenMP region execution time in the application ",
+			"children": [{
+				"name": "PSC_PARALLEL_REGION_CYCLE"				
 			}]
 		}]
 	},
