@@ -1,578 +1,826 @@
 {
-	"name":"Classes",
-	"children": [{
-		"name": "BenchmarkingProps",
-		"children": [{
-			"name": "BRANCH_MISPREDICTION",
-			"children": [{
-				"name": "PSC_PAPI_BR_MSP: Conditional branch instructions mispredicted"
-			},
-			{
-				"name": "PSC_PAPI_BR_CN: Conditional branch instructions"
-			}]
-		},
-		{
-			"name":"BENCHALLPROPS",
-			"children":[{
-				"name":"PSC_PAPI_BR_CN: Conditional branch instructions"
-			},
-			{
-				"name":"PSC_PAPI_BR_INS: Branch instructions"
-			},
-			{
-				"name":"PSC_PAPI_BR_MSP: Conditional branch instructions mispredicted"
-			},
-			{
-				"name":"PSC_PAPI_FP_OPS: Floating point operations"
-			},
-			{
-				"name":"PSC_PAPI_INT_INS: Integer instructions"
-			},
-			{
-				"name":"PSC_PAPI_L1_DCA: Level 1 data cache accesses"
-			},
-			{
-				"name":"PSC_PAPI_L1_DCH: Level 1 data cache hits"
-			},
-			{
-				"name":"PSC_PAPI_L1_DCM: Level 1 data cache misses"
-			},
-			{
-				"name":"PSC_PAPI_L2_DCA: Level 2 data cache accesses"
-			},
-			{
-				"name":"PSC_PAPI_L2_DCH: Level 2 data cache hits"
-			},
-			{
-				"name":"PSC_PAPI_L2_DCM: Level 2 data cache misses"
-			},
-			{
-				"name":"PSC_PAPI_L3_DCA: Level 3 data cache accesses"
-			},
-			{
-				"name":"PSC_PAPI_L3_DCH: Level 3 data cache hits"
-			},
-			{
-				"name":"PSC_PAPI_L3_DCM: Level 3 data cache misses"
-			},
-			{
-				"name":"PSC_PAPI_LST_INS: A"
-			},
-			{
-				"name":"PSC_PAPI_RES_STL: A"
-			},
-			{
-				"name":"PSC_PAPI_TLB_TL: A"
-			},
-			{
-				"name":"PSC_PAPI_TOT_CYC: A"
-			},
-			{
-				"name":"PSC_PAPI_TOT_IIS: A"
-			},
-			{
-				"name":"PSC_PAPI_TOT_INS: A"
-			}]
-			
-		},
-		{
-			"name": "L1D: L1 Data Cache Misses Ratio Property",
-			"children":[
-			{
-				"name": "PSC_PAPI_TOT_CYC: Total cycles"
-			},
-			{
-				"name": "PSC_PAPI_L1_DCM: Level 1 data cache misses"
-			},
-			{
-				"name": "PSC_PAPI_L1_DCH: Level 1 data cache hits"
-			}]
-		},
-		{
-			"name": "L2MISSES: L2 Cache Miss Ratio Property",
-			"children":[
-			{
-				"name": "PSC_PAPI_TOT_CYC: Total cycles"
-			},
-			{
-				"name": "PSC_PAPI_L2_TCM: Level 2 cache misses"
-			},
-			{
-				"name": "PSC_PAPI_L2_TCH: Level 2 total cache hits"
-			}]
-		},
-		{
-			"name": "EXECTIMEIMPORTANCE: Return the execution time of the region in thread 0 as severity.",
-			"children":[
-			{
-				"name": "PSC_EXECUTION_TIME"
-			}]
-		},
-		{
-			"name": "PERFORMANCECOUNTERS: Performance counters as program signature.",
-			"children":[
-			{
-				"name": "PSC_PAPI_L1_DCM: Level 1 data cache misses"
-			},
-			{
-				"name": "PSC_PAPI_L1_ICM: Level 1 instructions cache misses"
-			},
-			{
-				"name": "PSC_PAPI_L2_DCM: Level 2 data cache misses"
-			},
-			{
-				"name": "PSC_PAPI_L3_DCM: Level 3 data cache misses"
-			},
-			{
-				"name": "PSC_PAPI_L1_TCM: Level 1 total cache misses"
-			},
-			{
-				"name": "PSC_PAPI_L2_TCM: Level 2 total cache misses"
-			},
-			{
-				"name": "PSC_PAPI_L3_TCM: Level 3 total cache misses"
-			},
-			{
-				"name": "PSC_PAPI_TLB_DM: Data translation lookaside buffer misses"
-			},
-			{
-				"name": "PSC_PAPI_TLB_IM: Instruction translation lookaside buffer misses"
-			},
-			{
-				"name": "PSC_PAPI_BR_CN: Conditional branch instructions"
-			},
-			{
-				"name": "PSC_PAPI_BR_MSP: Conditional branch instructions mispredicted"
-			},
-			{
-				"name": "PSC_PAPI_TOT_INS: Instructions completed"
-			},
-			{
-				"name": "PSC_PAPI_FP_INS: Floating point instructions"
-			},
-			{
-				"name": "PSC_PAPI_LD_INS: Load instructions"
-			},
-			{
-				"name": "PSC_PAPI_SR_INS: Store instructions"
-			},
-			{
-				"name": "PSC_PAPI_BR_INS: Branch instructions"
-			},
-			{
-				"name": "PSC_PAPI_TOT_CYC: Total cycles"
-			},
-			{
-				"name": "PSC_PAPI_L2_DCH: Level 2 data cache hits"
-			},
-			{
-				"name": "PSC_PAPI_L2_DCA: Level 2 data cache accesses"
-			},
-			{
-				"name": "PSC_PAPI_L3_DCA: Level 3 data cache accesses"
-			},
-			{
-				"name": "PSC_PAPI_L2_ICH: Level 2 instructions cache hits"
-			},
-			{
-				"name": "PSC_PAPI_L2_ICR: Level 2 instructions cache reads"
-			},
-			{
-				"name": "PSC_PAPI_L3_TCA: Level 3 total cache accesses"
-			},
-			{
-				"name": "PSC_PAPI_FP_OPS: Floating point operations"
-			},
-			{
-				"name": "PSC_EXECUTION_TIME: Execution time"
-			},
-			{
-				"name": "PSC_PAPI_TOT_INS: Instructions completed"
-			}]
-		}]
-	},
-	{
-		"name": "Energy",
-		"children":[{
-			"name":"ENERGY_CONSUMPTION: Cost of Ownership property",
-			"children":[{
-				"name": "PSC_EXECUTION_TIME: Execution time"
-			},
-			{
-				"name": "PSC_TASKS_CREATED: ???"
-			}]
-		},
-		{
-			"name": "ENERGY_CONSUMPTION: Energy consumption property",
-			"children": [{
-				"name": "PSC_ENOPT_ALL_CORES: Provides energy consumption of all cores on a node"
-			}]
-		},
-		{
-			"name": "ENERGY_INEFFICIENT: Return energy spent per floating point instruction, indicating energy inefficient regions, as severity.",
-			"children":[{
-				"name": "PSC_ENOPT_ALL_CORES: Provides energy consumption of all cores on a node"
-			},
-			{
-				"name": "PSC_PAPI_FP_INS: Floating point instructions"
-			}]
-		},
-		{
-			"name": "MEMORY_BOUND: Return number of L3 cache misses per FLOP, indicating memory bound regions, as severity.",
-			"children":[{
-				"name": "PSC_PAPI_L3_TCM: Level 3 total cache misses"
-			},
-			{
-				"name": "PSC_PAPI_FP_INS: Floating point instructions"
-			}]
-		},
-		{
-			"name": "POWER_USED",
-			"children": [{
-				"name": "PSC_ENOPT_ALL_CORES: Provides energy consumption of all cores on a node"
-			},
-			{
-				"name": "PSC_EXECUTION_TIME: Execution time"
-			}]
-		},
-		{
-			"name":"ENERGY_SUITED: Return the execution time of the region in thread 0 as severity.",
-			"children": [{
-				"name" : "PSC_EXECUTION_TIME: Execution time"
-			},
-			{
-				"name": "PSC_PAPI_L3_TCM: Level 3 cache total cache misses"
-			},
-			{
-				"name": "PSC_PAPI_L2_TCM: Level 2 total cache misses"
-			},
-			{
-				"name": "PSC_PAPI_TOT_CYC: Total cycles"
-			},
-			{
-				"name": "PSC_PAPI_TOT_INS: Instructions completed"
-			},
-			{
-				"name": "PSC_ENOPT_ALL_CORES:  Provides energy consumption of all cores on a node."
-			},
-			{
-				"name": "PSC_ENOPT_ALL_DRAMS:  Provides energy consumption of DRAM modules on a node."
-			}]
-		}]
-	},
-	{
-		"name": "GPUTesting",
-		"children":[{
-			"name": "CUDA_ACHIEVEDOCCUPANCY: Total number of cycles a multiprocessor has at least one active warp",
-			"children":[{
-				"name": "PSC_CUPTI_DD_ACTIVE_CYCLES"
-			},
-			{
-				"name": "PSC_CUPTI_DD_ACTIVE_WARPS"
-			}]
-		},
-		{
-			"name": "CUDA_ACTIVECYCLES: total number of cycles a multiprocessor has at least one active warp",
-			"children":[{
-				"name": "PSC_CUPTI_DD_ACTIVE_CYCLES"
-			}]
-		},
-		{
-			"name": "CUDA_BRANCHEFFICIENCY: GPU Ratio of non-divergent branches to total branches property",
-			"children":[{
-				"name": "PSC_CUPTI_DD_DIVERGENT_BRANCH"
-			},
-			{
-				"name": "PSC_CUPTI_DD_BRANCH"
-			}]
-		},
-		{
-			"name": "CUDA_BYTESTRANSFERED: amount of bytes transfered between host and device",
-			"children":[{
-				"name": "PSC_CUDA_BYTES_TRANSFERRED"
-			}]
-		},
-		{
-			"name": "CUDA_EXECUTIONTIME: kernel execution time property",
-			"children": [{
-				"name": "PSC_CUDA_KERNEL_EXECUTION_TIME"
-			}]
-		},
-		{
-			"name": "CUDA_INSTRUCTIONSEXECUTED: Number of instructions executed on GPU",
-			"children":[{
-				"name": "PSC_CUPTI_DD_INST_EXECUTED"
-			}]
-		},
-		{
-			"name": "CUDA_TRANSFERTIME: Time to transfer data from host to device property",
-			"children": [{
-				"name": "PSC_CUDA_TRANSFER_EXECUTION_TIME"
-			}]
-		}]
-	},
-	{
-		"name": "mpi",
-		"children":[{
-			"name": "EAGERLIMITDEPENDENT",
-			"children": [{
-				"name": "PSC_MPI_MSG_P2P_TOT"
-			},
-			{
-				"name": "PSC_MPI_MSG_P2P_THR"
-			},
-			{
-				"name": "PSC_MPI_MSG_FREQ_2K"
-			},
-			{
-				"name": "PSC_MPI_MSG_FREQ_4K"
-			},
-			{
-				"name": "PSC_MPI_MSG_FREQ_8K"
-			},
-			{
-				"name": "PSC_MPI_MSG_FREQ_16K"
-			},
-			{
-				"name": "PSC_MPI_MSG_FREQ_32K"
-			},
-			{
-				"name": "PSC_MPI_MSG_FREQ_64K"
-			}]
-		},
-		{
-			"name": "MPITIME",
-			"children": [{
-				"name": "PSC_EXECUTION_TIME: Execution time"
-			}]
-		},
-		{
-			"name": "MPIPROP: MpiLate ?????????????????????",
-			"children":[{
-				"name": "PSC_EXECUTION_TIME: Execution time"
-			}]
-		},
-		{
-			"name": "OVERLOADEDMASTER: ",
-			"children":[{
-				"name":"PSC_EXECUTION_TIME"
-			}]
-		},
-		{
-			"name": "MPIPROP: Check execcive MPI time due to large/small messages",
-			"children":[{
-				"name": "PSC_EXECUTION_TIME"
-			}]
-		}]
-	},
-	{
-		"name": "OpenCL",
-		"children":[{
-			"name": "OPENCL_KERNELEXECTIME: total amount of time spent on kernel execution",
-			"children": [{
-				"name": "PSC_OPENCL_KERNEL_EXECUTION_TIME"
-			}]
-		}]
-	},
-	{
-		"name": "openmp",
-		"children":[{
-			"name": " CRITICALREGIONOVERHEAD_OMPREGION: critical section overhead",
-			"children": [{
-				"name": "PSC_EXECUTION_TIME"				
-			},
-			{
-				"name": "PSC_CRITICAL_REGION_CYCLE"
-			}]
-		},
-		{
-			"name": " ATOMICREGIONOVERHEAD_OMPREGION: atomic section overhead",
-			"children": [{
-				"name": "PSC_EXECUTION_TIME"				
-			},
-			{
-				"name": "PSC_CRITICAL_REGION_CYCLE"
-			}]
-		},
-		{
-			"name": " FLUSHREGIONOVERHEAD_OMPREGION: flushed section overhead",
-			"children": [{
-				"name": "PSC_EXECUTION_TIME"				
-			},
-			{
-				"name": "PSC_CRITICAL_REGION_CYCLE"
-			}]
-		},
-		{
-			"name": " IMBALANCE_IN_ORDERED_LOOP_OMP: Imbalance in ORDERED loop",
-			"children": [{
-				"name": "PSC_EXECUTION_TIME"				
-			},
-			{
-				"name": "PSC_CRITICAL_REGION_CYCLE"
-			}]
-		},
-		{
-			"name": " LOADIMBALANCEPARALLELSECTION: Load Imbalance in Parallel Sections",
-			"children": [{
-				"name": "PSC_EXECUTION_TIME"				
-			},
-			{
-				"name": "PSC_IMPLICIT_BARRIER_TIME"
-			}]
-		},
-		{
-			"name": " IMBALANCEOMPBARRIER: Load Imbalance in Explicit Barrier property",
-			"children": [{
-				"name": "PSC_EXECUTION_TIME"				
-			},
-			{
-				"name": "PSC_OMP_BARRIER_CYCLE"
-			}]
-		},
-		{
-			"name": " LOADIMBALANCEPARALLELREGION: Load Imbalance in Parallel Region",
-			"children": [{
-				"name": "PSC_EXECUTION_TIME"				
-			},
-			{
-				"name": "PSC_IMPLICIT_BARRIER_TIME"
-			}]
-		},
-		{
-			"name": " LOADIMBALANCEPARALLELLOOP: Load Imbalance in Parallel loop",
-			"children": [{
-				"name": "PSC_EXECUTION_TIME"				
-			},
-			{
-				"name": "PSC_IMPLICIT_BARRIER_TIME"
-			}]
-		},
-		{
-			"name": " LOADIMBALANCEWORKSHAREREGION: Load Imbalance in Workshare Region",
-			"children": [{
-				"name": "PSC_EXECUTION_TIME"				
-			},
-			{
-				"name": "PSC_IMPLICIT_BARRIER_TIME"
-			}]
-		},
-		{
-			"name": " LOADIMBALANCEPARALLELSECTION: Load Imbalance in Parallel Section",
-			"children": [{
-				"name": "PSC_EXECUTION_TIME"				
-			},
-			{
-				"name": "PSC_IMPLICIT_BARRIER_TIME"
-			}]
-		},
-		{
-			"name": " LOADIMBALANCEOMPREGION: Load Imbalance in OMP Region",
-			"children": [{
-				"name": "PSC_EXECUTION_TIME"				
-			},
-			{
-				"name": "PSC_IMPLICIT_BARRIER_TIME"
-			}]
-		},
-		{
-			"name": " STARTUPSHUTDOWNOVERHEAD: Parallel Region Start up and Shutdown overhead",
-			"children": [{
-				"name": "PSC_EXECUTION_TIME"				
-			},
-			{
-				"name": "PSC_PARALLEL_REGION_CYCLE"
-			},
-			{
-				"name": "PSC_PARALLEL_REGION_BODY_CYCLE"
-			}]
-		},
-		{
-			"name": " SERIALIZATIONCRITICALREGIONOVERHEAD_OMPREGION: Serialization in Critical region",
-			"children": [{
-				"name": "PSC_EXECUTION_TIME"				
-			},
-			{
-				"name": "PSC_CRITICAL_REGION_CYCLE"
-			}]
-		},
-		{
-			"name": " SEQUENTIALINMASTER: Sequential Computation in Master Region",
-			"children": [{
-				"name": "PSC_EXECUTION_TIME"				
-			},
-			{
-				"name": "PSC_MASTER_BODY_CYCLE"
-			}]
-		},
-		{
-			"name": " SEQUENTIALINORDEREDLOOP: Sequential Computation in Ordered Loop ",
-			"children": [{
-				"name": "PSC_EXECUTION_TIME"				
-			},
-			{
-				"name": "PSC_ORDERED_REGION_CYCLE"
-			}]
-		},
-		{
-			"name": " SEQUENTIALINSINGLE: Sequential Computation in Single Region ",
-			"children": [{
-				"name": "PSC_EXECUTION_TIME"				
-			},
-			{
-				"name": "PSC_SINGLE_REGION_CYCLE"
-			}]
-		},
-		{
-			"name": " USERREGIONEXECTIME: Hot OpenMP region execution time in the application ",
-			"children": [{
-				"name": "PSC_EXECUTION_TIME"				
-			}]
-		},
-		{
-			"name": " MAINREGIONEXECTIME: Hot OpenMP region execution time in the application ",
-			"children": [{
-				"name": "PSC_EXECUTION_TIME"				
-			}]
-		},
-		{
-			"name": " CALLREGIONEXECTIME: Hot OpenMP region execution time in the application ",
-			"children": [{
-				"name": "PSC_EXECUTION_TIME"				
-			}]
-		},
-		{
-			"name": " SUBREGIONEXECTIME: Hot OpenMP region execution time in the application ",
-			"children": [{
-				"name": "PSC_EXECUTION_TIME"				
-			}]
-		},
-		{
-			"name": " OMPFORREGIONEXECTIME: Hot OpenMP region execution time in the application ",
-			"children": [{
-				"name": "PSC_OMP_DO_REGION_CYCLE"				
-			}]
-		},
-		{
-			"name": " PARALLELREGIONEXECTIME: Hot OpenMP region execution time in the application ",
-			"children": [{
-				"name": "PSC_PARALLEL_REGION_CYCLE"				
-			}]
-		}]
-	},
-	{
-		"name": "overhead"
-	},
-	{
-		"name": "Pipeline"
-	},
-	{
-		"name": "Skeleton"
-	},
-	{
-		"name": "tuning"
-	},
-	{
-		"name": "Westmere"
-	}]
+  "name": "Classes",
+  "children": [
+    {
+      "name": "BenchmarkingProps",
+      "children": [
+        {
+          "name": "BRANCH_MISPREDICTION",
+          "children": [
+            {
+              "name": "PSC_PAPI_BR_MSP: Conditional branch instructions mispredicted"
+            },
+            {
+              "name": "PSC_PAPI_BR_CN: Conditional branch instructions"
+            }
+          ]
+        },
+        {
+          "name": "BENCHALLPROPS",
+          "children": [
+            {
+              "name": "PSC_PAPI_BR_CN: Conditional branch instructions"
+            },
+            {
+              "name": "PSC_PAPI_BR_INS: Branch instructions"
+            },
+            {
+              "name": "PSC_PAPI_BR_MSP: Conditional branch instructions mispredicted"
+            },
+            {
+              "name": "PSC_PAPI_FP_OPS: Floating point operations"
+            },
+            {
+              "name": "PSC_PAPI_INT_INS: Integer instructions"
+            },
+            {
+              "name": "PSC_PAPI_L1_DCA: Level 1 data cache accesses"
+            },
+            {
+              "name": "PSC_PAPI_L1_DCH: Level 1 data cache hits"
+            },
+            {
+              "name": "PSC_PAPI_L1_DCM: Level 1 data cache misses"
+            },
+            {
+              "name": "PSC_PAPI_L2_DCA: Level 2 data cache accesses"
+            },
+            {
+              "name": "PSC_PAPI_L2_DCH: Level 2 data cache hits"
+            },
+            {
+              "name": "PSC_PAPI_L2_DCM: Level 2 data cache misses"
+            },
+            {
+              "name": "PSC_PAPI_L3_DCA: Level 3 data cache accesses"
+            },
+            {
+              "name": "PSC_PAPI_L3_DCH: Level 3 data cache hits"
+            },
+            {
+              "name": "PSC_PAPI_L3_DCM: Level 3 data cache misses"
+            },
+            {
+              "name": "PSC_PAPI_LST_INS: A"
+            },
+            {
+              "name": "PSC_PAPI_RES_STL: A"
+            },
+            {
+              "name": "PSC_PAPI_TLB_TL: A"
+            },
+            {
+              "name": "PSC_PAPI_TOT_CYC: A"
+            },
+            {
+              "name": "PSC_PAPI_TOT_IIS: A"
+            },
+            {
+              "name": "PSC_PAPI_TOT_INS: A"
+            }
+          ]
+        },
+        {
+          "name": "L1D: L1 Data Cache Misses Ratio Property",
+          "children": [
+            {
+              "name": "PSC_PAPI_TOT_CYC: Total cycles"
+            },
+            {
+              "name": "PSC_PAPI_L1_DCM: Level 1 data cache misses"
+            },
+            {
+              "name": "PSC_PAPI_L1_DCH: Level 1 data cache hits"
+            }
+          ]
+        },
+        {
+          "name": "L2MISSES: L2 Cache Miss Ratio Property",
+          "children": [
+            {
+              "name": "PSC_PAPI_TOT_CYC: Total cycles"
+            },
+            {
+              "name": "PSC_PAPI_L2_TCM: Level 2 cache misses"
+            },
+            {
+              "name": "PSC_PAPI_L2_TCH: Level 2 total cache hits"
+            }
+          ]
+        },
+        {
+          "name": "EXECTIMEIMPORTANCE: Return the execution time of the region in thread 0 as severity.",
+          "children": [
+            {
+              "name": "PSC_EXECUTION_TIME"
+            }
+          ]
+        },
+        {
+          "name": "PERFORMANCECOUNTERS: Performance counters as program signature.",
+          "children": [
+            {
+              "name": "PSC_PAPI_L1_DCM: Level 1 data cache misses"
+            },
+            {
+              "name": "PSC_PAPI_L1_ICM: Level 1 instructions cache misses"
+            },
+            {
+              "name": "PSC_PAPI_L2_DCM: Level 2 data cache misses"
+            },
+            {
+              "name": "PSC_PAPI_L3_DCM: Level 3 data cache misses"
+            },
+            {
+              "name": "PSC_PAPI_L1_TCM: Level 1 total cache misses"
+            },
+            {
+              "name": "PSC_PAPI_L2_TCM: Level 2 total cache misses"
+            },
+            {
+              "name": "PSC_PAPI_L3_TCM: Level 3 total cache misses"
+            },
+            {
+              "name": "PSC_PAPI_TLB_DM: Data translation lookaside buffer misses"
+            },
+            {
+              "name": "PSC_PAPI_TLB_IM: Instruction translation lookaside buffer misses"
+            },
+            {
+              "name": "PSC_PAPI_BR_CN: Conditional branch instructions"
+            },
+            {
+              "name": "PSC_PAPI_BR_MSP: Conditional branch instructions mispredicted"
+            },
+            {
+              "name": "PSC_PAPI_TOT_INS: Instructions completed"
+            },
+            {
+              "name": "PSC_PAPI_FP_INS: Floating point instructions"
+            },
+            {
+              "name": "PSC_PAPI_LD_INS: Load instructions"
+            },
+            {
+              "name": "PSC_PAPI_SR_INS: Store instructions"
+            },
+            {
+              "name": "PSC_PAPI_BR_INS: Branch instructions"
+            },
+            {
+              "name": "PSC_PAPI_TOT_CYC: Total cycles"
+            },
+            {
+              "name": "PSC_PAPI_L2_DCH: Level 2 data cache hits"
+            },
+            {
+              "name": "PSC_PAPI_L2_DCA: Level 2 data cache accesses"
+            },
+            {
+              "name": "PSC_PAPI_L3_DCA: Level 3 data cache accesses"
+            },
+            {
+              "name": "PSC_PAPI_L2_ICH: Level 2 instructions cache hits"
+            },
+            {
+              "name": "PSC_PAPI_L2_ICR: Level 2 instructions cache reads"
+            },
+            {
+              "name": "PSC_PAPI_L3_TCA: Level 3 total cache accesses"
+            },
+            {
+              "name": "PSC_PAPI_FP_OPS: Floating point operations"
+            },
+            {
+              "name": "PSC_EXECUTION_TIME: Execution time"
+            },
+            {
+              "name": "PSC_PAPI_TOT_INS: Instructions completed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Energy",
+      "children": [
+        {
+          "name": "ENERGY_CONSUMPTION: Cost of Ownership property",
+          "children": [
+            {
+              "name": "PSC_EXECUTION_TIME: Execution time"
+            },
+            {
+              "name": "PSC_TASKS_CREATED: ???"
+            }
+          ]
+        },
+        {
+          "name": "ENERGY_CONSUMPTION: Energy consumption property",
+          "children": [
+            {
+              "name": "PSC_ENOPT_ALL_CORES: Provides energy consumption of all cores on a node"
+            }
+          ]
+        },
+        {
+          "name": "ENERGY_INEFFICIENT: Return energy spent per floating point instruction, indicating energy inefficient regions, as severity.",
+          "children": [
+            {
+              "name": "PSC_ENOPT_ALL_CORES: Provides energy consumption of all cores on a node"
+            },
+            {
+              "name": "PSC_PAPI_FP_INS: Floating point instructions"
+            }
+          ]
+        },
+        {
+          "name": "MEMORY_BOUND: Return number of L3 cache misses per FLOP, indicating memory bound regions, as severity.",
+          "children": [
+            {
+              "name": "PSC_PAPI_L3_TCM: Level 3 total cache misses"
+            },
+            {
+              "name": "PSC_PAPI_FP_INS: Floating point instructions"
+            }
+          ]
+        },
+        {
+          "name": "POWER_USED",
+          "children": [
+            {
+              "name": "PSC_ENOPT_ALL_CORES: Provides energy consumption of all cores on a node"
+            },
+            {
+              "name": "PSC_EXECUTION_TIME: Execution time"
+            }
+          ]
+        },
+        {
+          "name": "ENERGY_SUITED: Return the execution time of the region in thread 0 as severity.",
+          "children": [
+            {
+              "name": "PSC_EXECUTION_TIME: Execution time"
+            },
+            {
+              "name": "PSC_PAPI_L3_TCM: Level 3 cache total cache misses"
+            },
+            {
+              "name": "PSC_PAPI_L2_TCM: Level 2 total cache misses"
+            },
+            {
+              "name": "PSC_PAPI_TOT_CYC: Total cycles"
+            },
+            {
+              "name": "PSC_PAPI_TOT_INS: Instructions completed"
+            },
+            {
+              "name": "PSC_ENOPT_ALL_CORES:  Provides energy consumption of all cores on a node."
+            },
+            {
+              "name": "PSC_ENOPT_ALL_DRAMS:  Provides energy consumption of DRAM modules on a node."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "GPUTesting",
+      "children": [
+        {
+          "name": "CUDA_ACHIEVEDOCCUPANCY: Total number of cycles a multiprocessor has at least one active warp",
+          "children": [
+            {
+              "name": "PSC_CUPTI_DD_ACTIVE_CYCLES"
+            },
+            {
+              "name": "PSC_CUPTI_DD_ACTIVE_WARPS"
+            }
+          ]
+        },
+        {
+          "name": "CUDA_ACTIVECYCLES: total number of cycles a multiprocessor has at least one active warp",
+          "children": [
+            {
+              "name": "PSC_CUPTI_DD_ACTIVE_CYCLES"
+            }
+          ]
+        },
+        {
+          "name": "CUDA_BRANCHEFFICIENCY: GPU Ratio of non-divergent branches to total branches property",
+          "children": [
+            {
+              "name": "PSC_CUPTI_DD_DIVERGENT_BRANCH"
+            },
+            {
+              "name": "PSC_CUPTI_DD_BRANCH"
+            }
+          ]
+        },
+        {
+          "name": "CUDA_BYTESTRANSFERED: amount of bytes transfered between host and device",
+          "children": [
+            {
+              "name": "PSC_CUDA_BYTES_TRANSFERRED"
+            }
+          ]
+        },
+        {
+          "name": "CUDA_EXECUTIONTIME: kernel execution time property",
+          "children": [
+            {
+              "name": "PSC_CUDA_KERNEL_EXECUTION_TIME"
+            }
+          ]
+        },
+        {
+          "name": "CUDA_INSTRUCTIONSEXECUTED: Number of instructions executed on GPU",
+          "children": [
+            {
+              "name": "PSC_CUPTI_DD_INST_EXECUTED"
+            }
+          ]
+        },
+        {
+          "name": "CUDA_TRANSFERTIME: Time to transfer data from host to device property",
+          "children": [
+            {
+              "name": "PSC_CUDA_TRANSFER_EXECUTION_TIME"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mpi",
+      "children": [
+        {
+          "name": "EAGERLIMITDEPENDENT",
+          "children": [
+            {
+              "name": "PSC_MPI_MSG_P2P_TOT"
+            },
+            {
+              "name": "PSC_MPI_MSG_P2P_THR"
+            },
+            {
+              "name": "PSC_MPI_MSG_FREQ_2K"
+            },
+            {
+              "name": "PSC_MPI_MSG_FREQ_4K"
+            },
+            {
+              "name": "PSC_MPI_MSG_FREQ_8K"
+            },
+            {
+              "name": "PSC_MPI_MSG_FREQ_16K"
+            },
+            {
+              "name": "PSC_MPI_MSG_FREQ_32K"
+            },
+            {
+              "name": "PSC_MPI_MSG_FREQ_64K"
+            }
+          ]
+        },
+        {
+          "name": "MPITIME",
+          "children": [
+            {
+              "name": "PSC_EXECUTION_TIME: Execution time"
+            }
+          ]
+        },
+        {
+          "name": "MPIPROP: MpiLate ?????????????????????",
+          "children": [
+            {
+              "name": "PSC_EXECUTION_TIME: Execution time"
+            }
+          ]
+        },
+        {
+          "name": "OVERLOADEDMASTER: ",
+          "children": [
+            {
+              "name": "PSC_EXECUTION_TIME"
+            }
+          ]
+        },
+        {
+          "name": "MPIPROP: Check execcive MPI time due to large/small messages",
+          "children": [
+            {
+              "name": "PSC_EXECUTION_TIME"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "OpenCL",
+      "children": [
+        {
+          "name": "OPENCL_KERNELEXECTIME: total amount of time spent on kernel execution",
+          "children": [
+            {
+              "name": "PSC_OPENCL_KERNEL_EXECUTION_TIME"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "openmp",
+      "children": [
+        {
+          "name": " CRITICALREGIONOVERHEAD_OMPREGION: critical section overhead",
+          "children": [
+            {
+              "name": "PSC_EXECUTION_TIME"
+            },
+            {
+              "name": "PSC_CRITICAL_REGION_CYCLE"
+            }
+          ]
+        },
+        {
+          "name": " ATOMICREGIONOVERHEAD_OMPREGION: atomic section overhead",
+          "children": [
+            {
+              "name": "PSC_EXECUTION_TIME"
+            },
+            {
+              "name": "PSC_CRITICAL_REGION_CYCLE"
+            }
+          ]
+        },
+        {
+          "name": " FLUSHREGIONOVERHEAD_OMPREGION: flushed section overhead",
+          "children": [
+            {
+              "name": "PSC_EXECUTION_TIME"
+            },
+            {
+              "name": "PSC_CRITICAL_REGION_CYCLE"
+            }
+          ]
+        },
+        {
+          "name": " IMBALANCE_IN_ORDERED_LOOP_OMP: Imbalance in ORDERED loop",
+          "children": [
+            {
+              "name": "PSC_EXECUTION_TIME"
+            },
+            {
+              "name": "PSC_CRITICAL_REGION_CYCLE"
+            }
+          ]
+        },
+        {
+          "name": " LOADIMBALANCEPARALLELSECTION: Load Imbalance in Parallel Sections",
+          "children": [
+            {
+              "name": "PSC_EXECUTION_TIME"
+            },
+            {
+              "name": "PSC_IMPLICIT_BARRIER_TIME"
+            }
+          ]
+        },
+        {
+          "name": " IMBALANCEOMPBARRIER: Load Imbalance in Explicit Barrier property",
+          "children": [
+            {
+              "name": "PSC_EXECUTION_TIME"
+            },
+            {
+              "name": "PSC_OMP_BARRIER_CYCLE"
+            }
+          ]
+        },
+        {
+          "name": " LOADIMBALANCEPARALLELREGION: Load Imbalance in Parallel Region",
+          "children": [
+            {
+              "name": "PSC_EXECUTION_TIME"
+            },
+            {
+              "name": "PSC_IMPLICIT_BARRIER_TIME"
+            }
+          ]
+        },
+        {
+          "name": " LOADIMBALANCEPARALLELLOOP: Load Imbalance in Parallel loop",
+          "children": [
+            {
+              "name": "PSC_EXECUTION_TIME"
+            },
+            {
+              "name": "PSC_IMPLICIT_BARRIER_TIME"
+            }
+          ]
+        },
+        {
+          "name": " LOADIMBALANCEWORKSHAREREGION: Load Imbalance in Workshare Region",
+          "children": [
+            {
+              "name": "PSC_EXECUTION_TIME"
+            },
+            {
+              "name": "PSC_IMPLICIT_BARRIER_TIME"
+            }
+          ]
+        },
+        {
+          "name": " LOADIMBALANCEPARALLELSECTION: Load Imbalance in Parallel Section",
+          "children": [
+            {
+              "name": "PSC_EXECUTION_TIME"
+            },
+            {
+              "name": "PSC_IMPLICIT_BARRIER_TIME"
+            }
+          ]
+        },
+        {
+          "name": " LOADIMBALANCEOMPREGION: Load Imbalance in OMP Region",
+          "children": [
+            {
+              "name": "PSC_EXECUTION_TIME"
+            },
+            {
+              "name": "PSC_IMPLICIT_BARRIER_TIME"
+            }
+          ]
+        },
+        {
+          "name": " STARTUPSHUTDOWNOVERHEAD: Parallel Region Start up and Shutdown overhead",
+          "children": [
+            {
+              "name": "PSC_EXECUTION_TIME"
+            },
+            {
+              "name": "PSC_PARALLEL_REGION_CYCLE"
+            },
+            {
+              "name": "PSC_PARALLEL_REGION_BODY_CYCLE"
+            }
+          ]
+        },
+        {
+          "name": " SERIALIZATIONCRITICALREGIONOVERHEAD_OMPREGION: Serialization in Critical region",
+          "children": [
+            {
+              "name": "PSC_EXECUTION_TIME"
+            },
+            {
+              "name": "PSC_CRITICAL_REGION_CYCLE"
+            }
+          ]
+        },
+        {
+          "name": " SEQUENTIALINMASTER: Sequential Computation in Master Region",
+          "children": [
+            {
+              "name": "PSC_EXECUTION_TIME"
+            },
+            {
+              "name": "PSC_MASTER_BODY_CYCLE"
+            }
+          ]
+        },
+        {
+          "name": " SEQUENTIALINORDEREDLOOP: Sequential Computation in Ordered Loop ",
+          "children": [
+            {
+              "name": "PSC_EXECUTION_TIME"
+            },
+            {
+              "name": "PSC_ORDERED_REGION_CYCLE"
+            }
+          ]
+        },
+        {
+          "name": " SEQUENTIALINSINGLE: Sequential Computation in Single Region ",
+          "children": [
+            {
+              "name": "PSC_EXECUTION_TIME"
+            },
+            {
+              "name": "PSC_SINGLE_REGION_CYCLE"
+            }
+          ]
+        },
+        {
+          "name": " USERREGIONEXECTIME: Hot OpenMP region execution time in the application ",
+          "children": [
+            {
+              "name": "PSC_EXECUTION_TIME"
+            }
+          ]
+        },
+        {
+          "name": " MAINREGIONEXECTIME: Hot OpenMP region execution time in the application ",
+          "children": [
+            {
+              "name": "PSC_EXECUTION_TIME"
+            }
+          ]
+        },
+        {
+          "name": " CALLREGIONEXECTIME: Hot OpenMP region execution time in the application ",
+          "children": [
+            {
+              "name": "PSC_EXECUTION_TIME"
+            }
+          ]
+        },
+        {
+          "name": " SUBREGIONEXECTIME: Hot OpenMP region execution time in the application ",
+          "children": [
+            {
+              "name": "PSC_EXECUTION_TIME"
+            }
+          ]
+        },
+        {
+          "name": " OMPFORREGIONEXECTIME: Hot OpenMP region execution time in the application ",
+          "children": [
+            {
+              "name": "PSC_OMP_DO_REGION_CYCLE"
+            }
+          ]
+        },
+        {
+          "name": " PARALLELREGIONEXECTIME: Hot OpenMP region execution time in the application ",
+          "children": [
+            {
+              "name": "PSC_PARALLEL_REGION_CYCLE"
+            }
+          ]
+        },
+        {
+          "name": " EMPTYTASKINTASKREGION: Empty task in tasks ",
+          "children": [
+            {
+              "name": "PSC_EXECUTION_TIME"
+            },
+            {
+              "name": "PSC_TASK_REGION_CYCLE"
+            },
+            {
+              "name": "PSC_TASK_REGION_BODY_CYCLE"
+            }
+          ]
+        },
+        {
+          "name": " OVERHEADDUETOSMALLTASK: Overhead due to less workload in task ",
+          "children": [
+            {
+              "name": "PSC_EXECUTION_TIME"
+            },
+            {
+              "name": "PSC_TASK_REGION_CYCLE"
+            }
+          ]
+        },
+        {
+          "name": " TASKREGIONOVERHEAD: Task Creation overhead ",
+          "children": [
+            {
+              "name": "PSC_EXECUTION_TIME"
+            },
+            {
+              "name": "PSC_TASK_REGION_CYCLE"
+            }
+          ]
+        },
+        {
+          "name": " TOOFINEGRANULARTASKS: Task Granularity ",
+          "children": [
+            {
+              "name": "PSC_EXECUTION_TIME"
+            },
+            {
+              "name": "PSC_TASK_REGION_CYCLE"
+            },
+            {
+              "name": "PSC_TASK_REGION_BODY_CYCLE"
+            }
+          ]
+        },
+        {
+          "name": " IMBALANCEDTASKREGION: Task region with imbalanced distribution ",
+          "children": [
+            {
+              "name": "PSC_EXECUTION_TIME"
+            },
+            {
+              "name": "PSC_TASK_REGION_CYCLE"
+            },
+            {
+              "name": "PSC_TASK_REGION_BODY_CYCLE"
+            }
+          ]
+        },
+        {
+          "name": " IMBALANCEDUETOUNEVENDISTRIBUTIONOFTASKS: Task region with imbalanced distribution ",
+          "children": [
+            {
+              "name": "PSC_EXECUTION_TIME"
+            },
+            {
+              "name": "PSC_TASK_REGION_CYCLE"
+            },
+            {
+              "name": "PSC_TASK_REGION_BODY_CYCLE"
+            }
+          ]
+        },
+        {
+          "name": " NUMBEROFTASKSSMALLERTHANNUMBEROFTHREADS: Task region with imbalanced distribution ",
+          "children": [
+            {
+              "name": "PSC_EXECUTION_TIME"
+            },
+            {
+              "name": "PSC_TASK_REGION_CYCLE"
+            },
+            {
+              "name": "PSC_TASK_REGION_BODY_CYCLE"
+            }
+          ]
+        },
+        {
+          "name": " IMBALANCEDTASKREGION: Task region with imbalanced distribution ",
+          "children": [
+            {
+              "name": "PSC_EXECUTION_TIME"
+            },
+            {
+              "name": "PSC_TASK_REGION_CYCLE"
+            },
+            {
+              "name": "PSC_TASK_REGION_BODY_CYCLE"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "overhead",
+      "children": [
+        {
+          "name": "OVERHEAD: High Instrumentation overhead-Itanium2"
+        },
+        {
+          "name": "REQUIREDREGION: -Itanium2"
+        },
+        {
+          "name": "HIGHINCLOVERHEAD : Identifies a region with high MRI overhead",
+          "children": [
+            {
+              "name": "PSC_MRI_OVERHEAD"
+            },
+            {
+              "name": "PSC_MRI_EXCL_OVERHEAD"
+            },
+            {
+              "name": "PSC_PAPI_TOT_CYC"
+            }
+          ]
+        },
+        {
+          "name": "HIGHEXCLOVERHEAD : Identifies a region with high MRI overhead",
+          "children": [
+            {
+              "name": "PSC_MRI_OVERHEAD"
+            },
+            {
+              "name": "PSC_MRI_EXCL_OVERHEAD"
+            },
+            {
+              "name": "PSC_PAPI_TOT_CYC - Inside region"
+            },
+            {
+              "name": "PSC_PAPI_TOT_CYC - Outside region"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Pipeline"
+    },
+    {
+      "name": "Skeleton"
+    },
+    {
+      "name": "tuning"
+    },
+    {
+      "name": "Westmere"
+    }
+  ]
 }
