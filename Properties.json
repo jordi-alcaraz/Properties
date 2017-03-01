@@ -258,7 +258,7 @@
             },
             {
               "name": "severity",
-              "_children":[
+              "_children": [
                 {
                   "name": "PSC_EXECUTION_TIME*(0.38*PSC_TASKS_CREATED)"
                 }
@@ -274,7 +274,7 @@
             },
             {
               "name": "severity",
-              "_children":[
+              "_children": [
                 {
                   "name": "Energy consumption"
                 }
@@ -293,7 +293,7 @@
             },
             {
               "name": "severity",
-              "_children":[
+              "_children": [
                 {
                   "name": "PSC_PAPI_FP_INS/PSC_ENOPT_ALL_CORES"
                 }
@@ -312,7 +312,7 @@
             },
             {
               "name": "severity",
-              "_children":[
+              "_children": [
                 {
                   "name": "PSC_PAPI_L3_TCM/PSC_PAPI_FP_INS"
                 }
@@ -331,7 +331,7 @@
             },
             {
               "name": "severity",
-              "_children":[
+              "_children": [
                 {
                   "name": "PSC_ENOPT_ALL_CORES/PSC_EXECUTION_TIME"
                 }
@@ -365,7 +365,7 @@
             },
             {
               "name": "severity",
-              "_children":[
+              "_children": [
                 {
                   "name": "PSC_EXECUTION_TIME/PSC_INSTANCES"
                 }
@@ -387,6 +387,14 @@
             },
             {
               "name": "PSC_CUPTI_DD_ACTIVE_WARPS"
+            },
+            {
+              "name": "severity",
+              "_children" :[
+                {
+                  "name":"100*(PSC_CUPTI_DD_ACTIVE_WARPS/PSC_CUPTI_DD_ACTIVE_CYCLES)/48"
+                }
+              ]
             }
           ]
         },
@@ -395,6 +403,14 @@
           "_children": [
             {
               "name": "PSC_CUPTI_DD_ACTIVE_CYCLES"
+            },
+            {
+              "name": "severity",
+              "_children":[
+                {
+                  "name": "PSC_CUPTI_DD_ACTIVE_CYCLES"
+                }
+              ]
             }
           ]
         },
@@ -406,6 +422,14 @@
             },
             {
               "name": "PSC_CUPTI_DD_BRANCH"
+            },
+            {
+              "name": "severity",
+              "_children":[
+                {
+                  "name": "(PSC_CUPTI_DD_BRANCH-PSC_CUPTI_DD_DIVERGENT_BRANCH )/ PSC_CUPTI_DD_BRANCH"
+                }
+              ]
             }
           ]
         },
@@ -414,6 +438,14 @@
           "_children": [
             {
               "name": "PSC_CUDA_BYTES_TRANSFERRED"
+            },
+            {
+              "name": "severity",
+              "_children":[
+                {
+                  "name": "PSC_CUDA_BYTES_TRANSFERRED"
+                }
+              ]
             }
           ]
         },
@@ -422,6 +454,14 @@
           "_children": [
             {
               "name": "PSC_CUDA_KERNEL_EXECUTION_TIME"
+            },
+            {
+              "name":"severity",
+              "_children":[
+                {
+                  "name": "PSC_CUDA_KERNEL_EXECUTION_TIME"
+                }
+              ]
             }
           ]
         },
@@ -430,6 +470,14 @@
           "_children": [
             {
               "name": "PSC_CUPTI_DD_INST_EXECUTED"
+            },
+            {
+              "name": "severity",
+              "_children":[
+                {
+                  "name": "PSC_CUPTI_DD_INST_EXECUTED"
+                }
+              ]
             }
           ]
         },
@@ -438,6 +486,14 @@
           "_children": [
             {
               "name": "PSC_CUDA_TRANSFER_EXECUTION_TIME"
+            },
+            {
+              "name": "severity",
+              "_children":[
+                {
+                  "name": "PSC_CUDA_TRANSFER_EXECUTION_TIME" 
+                }
+              ]
             }
           ]
         }
