@@ -16,12 +16,12 @@
               "name": "PSC_PAPI_BR_CN: Conditional branch instructions"
             },
             {
-            	"name": "severity",
-            	"_children":[
-            		{
-            			"name": "(PSC_PAPI_BR_CN/PSC_PAPI_BR_MSP)*(PSC_PAPI_TOT_CYC/PSC_PAPI_TOT_CYC-Phase)"
-            		}
-            	]
+              "name": "severity",
+              "_children": [
+                {
+                  "name": "(PSC_PAPI_BR_CN/PSC_PAPI_BR_MSP)*(PSC_PAPI_TOT_CYC/PSC_PAPI_TOT_CYC-Phase)"
+                }
+              ]
             }
           ]
         },
@@ -104,7 +104,7 @@
             },
             {
               "name": "severity",
-              "_children":[
+              "_children": [
                 {
                   "name": "(PSC_PAPI_L1_DCM/(PSC_PAPI_L1_DCM+PSC_PAPI_L1_DCH)*(PSC_PAPI_TOT_CYC/PSC_PAPI_TOT_CYC-Phase))"
                 }
@@ -126,7 +126,7 @@
             },
             {
               "name": "severity",
-              "_children":[
+              "_children": [
                 {
                   "name": "(PSC_PAPI_L2_TCM/(PSC_PAPI_L2_TCM+PSC_PAPI_L2_TCH))*(PSC_PAPI_TOT_CYC/PSC_PAPI_TOT_CYC-Phase)"
                 }
@@ -142,7 +142,7 @@
             },
             {
               "name": "severity",
-              "_children":[
+              "_children": [
                 {
                   "name": "(PSC_EXECUTION_TIME/PSC_EXECUTION_TIME-Phase)*100"
                 }
@@ -230,6 +230,14 @@
             },
             {
               "name": "PSC_PAPI_TOT_INS: Instructions completed"
+            },
+            {
+              "name": "severity",
+              "_children": [
+                {
+                  "name": "Time"
+                }
+              ]
             }
           ]
         }
@@ -247,6 +255,14 @@
             },
             {
               "name": "PSC_TASKS_CREATED: ???"
+            },
+            {
+              "name": "severity",
+              "_children":[
+                {
+                  "name": "PSC_EXECUTION_TIME*(0.38*PSC_TASKS_CREATED)"
+                }
+              ]
             }
           ]
         },
@@ -255,6 +271,14 @@
           "_children": [
             {
               "name": "PSC_ENOPT_ALL_CORES: Provides energy consumption of all cores on a node"
+            },
+            {
+              "name": "severity",
+              "_children":[
+                {
+                  "name": "Energy consumption"
+                }
+              ]
             }
           ]
         },
@@ -266,6 +290,14 @@
             },
             {
               "name": "PSC_PAPI_FP_INS: Floating point instructions"
+            },
+            {
+              "name": "severity",
+              "_children":[
+                {
+                  "name": "PSC_PAPI_FP_INS/PSC_ENOPT_ALL_CORES"
+                }
+              ]
             }
           ]
         },
@@ -277,6 +309,14 @@
             },
             {
               "name": "PSC_PAPI_FP_INS: Floating point instructions"
+            },
+            {
+              "name": "severity",
+              "_children":[
+                {
+                  "name": "PSC_PAPI_L3_TCM/PSC_PAPI_FP_INS"
+                }
+              ]
             }
           ]
         },
@@ -288,6 +328,14 @@
             },
             {
               "name": "PSC_EXECUTION_TIME: Execution time"
+            },
+            {
+              "name": "severity",
+              "_children":[
+                {
+                  "name": "PSC_ENOPT_ALL_CORES/PSC_EXECUTION_TIME"
+                }
+              ]
             }
           ]
         },
@@ -314,6 +362,14 @@
             },
             {
               "name": "PSC_ENOPT_ALL_DRAMS:  Provides energy consumption of DRAM modules on a node."
+            },
+            {
+              "name": "severity",
+              "_children":[
+                {
+                  "name": "PSC_EXECUTION_TIME/PSC_INSTANCES"
+                }
+              ]
             }
           ]
         }
