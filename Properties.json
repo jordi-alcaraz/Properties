@@ -19,7 +19,7 @@
             	"name": "severity",
             	"_children":[
             		{
-            			"name": "(PSC_PAPI_BR_CN/PSC_PAPI_BR_MSP)*(PSC_PAPI_TOT_CYC/PSC_PAPI_TOT_CYC)"
+            			"name": "(PSC_PAPI_BR_CN/PSC_PAPI_BR_MSP)*(PSC_PAPI_TOT_CYC/PSC_PAPI_TOT_CYC-Phase)"
             		}
             	]
             }
@@ -71,22 +71,22 @@
               "name": "PSC_PAPI_L3_DCM: Level 3 data cache misses"
             },
             {
-              "name": "PSC_PAPI_LST_INS: A"
+              "name": "PSC_PAPI_LST_INS: Load/store instructions completed"
             },
             {
-              "name": "PSC_PAPI_RES_STL: A"
+              "name": "PSC_PAPI_RES_STL: Cycles stalled on any resource"
             },
             {
-              "name": "PSC_PAPI_TLB_TL: A"
+              "name": "PSC_PAPI_TLB_TL: Total translation lookaside buffer misses"
             },
             {
-              "name": "PSC_PAPI_TOT_CYC: A"
+              "name": "PSC_PAPI_TOT_CYC: Total cycles"
             },
             {
-              "name": "PSC_PAPI_TOT_IIS: A"
+              "name": "PSC_PAPI_TOT_IIS: Instructions issued"
             },
             {
-              "name": "PSC_PAPI_TOT_INS: A"
+              "name": "PSC_PAPI_TOT_INS: Instructions completed"
             }
           ]
         },
@@ -101,6 +101,14 @@
             },
             {
               "name": "PSC_PAPI_L1_DCH: Level 1 data cache hits"
+            },
+            {
+              "name": "severity",
+              "_children":[
+                {
+                  "name": "(PSC_PAPI_L1_DCM/(PSC_PAPI_L1_DCM+PSC_PAPI_L1_DCH)*(PSC_PAPI_TOT_CYC/PSC_PAPI_TOT_CYC-Phase))"
+                }
+              ]
             }
           ]
         },
@@ -115,6 +123,14 @@
             },
             {
               "name": "PSC_PAPI_L2_TCH: Level 2 total cache hits"
+            },
+            {
+              "name": "severity",
+              "_children":[
+                {
+                  "name": "(PSC_PAPI_L2_TCM/(PSC_PAPI_L2_TCM+PSC_PAPI_L2_TCH))*(PSC_PAPI_TOT_CYC/PSC_PAPI_TOT_CYC-Phase)"
+                }
+              ]
             }
           ]
         },
@@ -123,6 +139,14 @@
           "_children": [
             {
               "name": "PSC_EXECUTION_TIME"
+            },
+            {
+              "name": "severity",
+              "_children":[
+                {
+                  "name": "(PSC_EXECUTION_TIME/PSC_EXECUTION_TIME-Phase)*100"
+                }
+              ]
             }
           ]
         },
