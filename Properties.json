@@ -507,6 +507,9 @@
           "name": "EAGERLIMITDEPENDENT",
           "_children": [
             {
+              "name": "PSC_MPI"
+            },
+            {
               "name": "PSC_MPI_MSG_P2P_TOT"
             },
             {
@@ -529,6 +532,14 @@
             },
             {
               "name": "PSC_MPI_MSG_FREQ_64K"
+            },
+            {
+              "name": "severity",
+              "_children":[
+                {
+                  "name": "PSC_MPI_MSG_P2P_THR/PSC_MPI_MSG_P2P_TOT"
+                }
+              ]
             }
           ]
         },
@@ -536,15 +547,37 @@
           "name": "MPITIME",
           "_children": [
             {
+              "name": "PSC_MPI"
+            },
+            {
               "name": "PSC_EXECUTION_TIME: Execution time"
+            },
+            {
+              "name": "severity",
+              "_children":[
+                {
+                  "name": "PSC_EXECUTION_TIME-Phase/PSC_MPI_TIME_SPENT"
+                }]
             }
+
           ]
         },
         {
           "name": "MPIPROP: MpiLate ?????????????????????",
           "_children": [
             {
+              "name": "PSC_MPI"
+            },
+            {
               "name": "PSC_EXECUTION_TIME: Execution time"
+            },
+            {
+              "name":"severity",
+              "_children":[
+                {
+                  "name": "Late time*100/PSC_EXECUTION_TIME"
+                }
+              ]
             }
           ]
         },
@@ -552,7 +585,18 @@
           "name": "OVERLOADEDMASTER: ",
           "_children": [
             {
+              "name": "PSC_MPI"
+            },
+            {
               "name": "PSC_EXECUTION_TIME"
+            },
+            {
+              "name":"severity",
+              "_children":[
+                {
+                  "name": "Late time*100/PSC_EXECUTION_TIME"
+                }
+              ]
             }
           ]
         },
@@ -560,7 +604,18 @@
           "name": "MPIPROP: Check execcive MPI time due to large/small messages",
           "_children": [
             {
+              "name": "PSC_MPI"
+            },
+            {
               "name": "PSC_EXECUTION_TIME"
+            },
+            {
+              "name":"severity",
+              "_children":[
+                {
+                  "name": "PSC_MPI_TIME_SPENT*100/PSC_EXECUTION_TIME"
+                }
+              ]
             }
           ]
         }
