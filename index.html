@@ -99,7 +99,17 @@ function update(source) {
   nodeEnter.append("text")
       .attr("dy", 3.5)
       .attr("dx", 5.5)
-      .text(function(d) { return d.name; });
+      .text(function(d) { 
+		if(d.my_root)
+		{
+			return d.my_root;
+		}
+		else if(d.severity)
+		{
+			return "Ordered by: "+d.severity;
+		}
+		return d.name; 
+	});
 
   // Transition nodes to their new position.
   nodeEnter.transition()
@@ -170,6 +180,14 @@ function click(d) {
 }
 
 function color(d) {
+  if(d.severity)
+  {
+	return "#FF7272";
+  }
+  else if (d.my_root)
+  {
+	return "#06dbef";
+  }
   return  d.type == "Init" ? "#06dbef": d.type == "Class" ? "#76dbef": d.name == "severity" ?"#FF7272" : d._children ? "#3182bd" : d.children ? "#c6dbef" : "#f0FF07";
 }
 

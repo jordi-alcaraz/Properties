@@ -1,6 +1,5 @@
 {
-  "name": "Properties by class",
-  "type": "Init",
+  "my_root": "Properties by class",
   "children": [
     {
       "name": "BenchmarkingProps",
@@ -630,6 +629,14 @@
           "_children": [
             {
               "name": "PSC_OPENCL_KERNEL_EXECUTION_TIME"
+            },
+            {
+              "name": "severity",
+              "_children":[
+                {
+                  "name": "PSC_OPENCL_KERNEL_EXECUTION_TIME"
+                }
+              ]
             }
           ]
         }
@@ -647,6 +654,9 @@
             },
             {
               "name": "PSC_CRITICAL_REGION_CYCLE"
+            },
+            {
+              "severity":"Critical time in %"
             }
           ]
         },
