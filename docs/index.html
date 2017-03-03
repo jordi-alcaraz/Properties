@@ -108,6 +108,10 @@ function update(source) {
 		{
 			return "Ordered by: "+d.severity;
 		}
+		else if(d.class)
+		{
+			return d.class;
+		}
 		return d.name; 
 	});
 
@@ -182,13 +186,17 @@ function click(d) {
 function color(d) {
   if(d.severity)
   {
-	return "#FF7272";
+	return "#F5A9BC";
   }
-  else if (d.my_root)
+  else if(d.class)
   {
-	return "#06dbef";
+	return "#76dbef";
   }
-  return  d.type == "Init" ? "#06dbef": d.type == "Class" ? "#76dbef": d.name == "severity" ?"#FF7272" : d._children ? "#3182bd" : d.children ? "#c6dbef" : "#f0FF07";
+  else if(d.my_root)
+  {
+	return "#BCF5A9";
+  }
+  return  d._children ? "#3182bd" : d.children ? "#c6dbef" : "#F3F781";
 }
 
 </script>

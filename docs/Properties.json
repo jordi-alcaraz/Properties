@@ -2,8 +2,7 @@
   "my_root": "Properties by class",
   "children": [
     {
-      "name": "BenchmarkingProps",
-      "type": "Class",
+      "class": "BenchmarkingProps",
       "_children": [
         {
           "name": "BRANCH_MISPREDICTION",
@@ -15,12 +14,7 @@
               "name": "PSC_PAPI_BR_CN: Conditional branch instructions"
             },
             {
-              "name": "severity",
-              "_children": [
-                {
-                  "name": "(PSC_PAPI_BR_CN/PSC_PAPI_BR_MSP)*(PSC_PAPI_TOT_CYC/PSC_PAPI_TOT_CYC-Phase)"
-                }
-              ]
+              "severity": "(PSC_PAPI_BR_CN/PSC_PAPI_BR_MSP)*(PSC_PAPI_TOT_CYC/PSC_PAPI_TOT_CYC-Phase)"
             }
           ]
         },
@@ -102,12 +96,7 @@
               "name": "PSC_PAPI_L1_DCH: Level 1 data cache hits"
             },
             {
-              "name": "severity",
-              "_children": [
-                {
-                  "name": "(PSC_PAPI_L1_DCM/(PSC_PAPI_L1_DCM+PSC_PAPI_L1_DCH)*(PSC_PAPI_TOT_CYC/PSC_PAPI_TOT_CYC-Phase))"
-                }
-              ]
+              "severity": "(PSC_PAPI_L1_DCM/(PSC_PAPI_L1_DCM+PSC_PAPI_L1_DCH)*(PSC_PAPI_TOT_CYC/PSC_PAPI_TOT_CYC-Phase))"
             }
           ]
         },
@@ -124,12 +113,7 @@
               "name": "PSC_PAPI_L2_TCH: Level 2 total cache hits"
             },
             {
-              "name": "severity",
-              "_children": [
-                {
-                  "name": "(PSC_PAPI_L2_TCM/(PSC_PAPI_L2_TCM+PSC_PAPI_L2_TCH))*(PSC_PAPI_TOT_CYC/PSC_PAPI_TOT_CYC-Phase)"
-                }
-              ]
+              "severity": "(PSC_PAPI_L2_TCM/(PSC_PAPI_L2_TCM+PSC_PAPI_L2_TCH))*(PSC_PAPI_TOT_CYC/PSC_PAPI_TOT_CYC-Phase)"
             }
           ]
         },
@@ -140,12 +124,7 @@
               "name": "PSC_EXECUTION_TIME"
             },
             {
-              "name": "severity",
-              "_children": [
-                {
-                  "name": "(PSC_EXECUTION_TIME/PSC_EXECUTION_TIME-Phase)*100"
-                }
-              ]
+              "severity": "(PSC_EXECUTION_TIME/PSC_EXECUTION_TIME-Phase)*100"
             }
           ]
         },
@@ -231,20 +210,14 @@
               "name": "PSC_PAPI_TOT_INS: Instructions completed"
             },
             {
-              "name": "severity",
-              "_children": [
-                {
-                  "name": "Time"
-                }
-              ]
+              "severity": "Time"
             }
           ]
         }
       ]
     },
     {
-      "name": "Energy",
-      "type": "Class",
+      "class": "Energy",
       "_children": [
         {
           "name": "ENERGY_CONSUMPTION: Cost of Ownership property",
@@ -256,12 +229,7 @@
               "name": "PSC_TASKS_CREATED: ???"
             },
             {
-              "name": "severity",
-              "_children": [
-                {
-                  "name": "PSC_EXECUTION_TIME*(0.38*PSC_TASKS_CREATED)"
-                }
-              ]
+              "severity": "PSC_EXECUTION_TIME*(0.38*PSC_TASKS_CREATED)"
             }
           ]
         },
@@ -272,12 +240,7 @@
               "name": "PSC_ENOPT_ALL_CORES: Provides energy consumption of all cores on a node"
             },
             {
-              "name": "severity",
-              "_children": [
-                {
-                  "name": "Energy consumption"
-                }
-              ]
+              "severity": "Energy consumption"
             }
           ]
         },
@@ -291,12 +254,7 @@
               "name": "PSC_PAPI_FP_INS: Floating point instructions"
             },
             {
-              "name": "severity",
-              "_children": [
-                {
-                  "name": "PSC_PAPI_FP_INS/PSC_ENOPT_ALL_CORES"
-                }
-              ]
+              "severity": "PSC_PAPI_FP_INS/PSC_ENOPT_ALL_CORES"
             }
           ]
         },
@@ -310,12 +268,7 @@
               "name": "PSC_PAPI_FP_INS: Floating point instructions"
             },
             {
-              "name": "severity",
-              "_children": [
-                {
-                  "name": "PSC_PAPI_L3_TCM/PSC_PAPI_FP_INS"
-                }
-              ]
+              "severity": "PSC_PAPI_L3_TCM/PSC_PAPI_FP_INS"
             }
           ]
         },
@@ -329,12 +282,7 @@
               "name": "PSC_EXECUTION_TIME: Execution time"
             },
             {
-              "name": "severity",
-              "_children": [
-                {
-                  "name": "PSC_ENOPT_ALL_CORES/PSC_EXECUTION_TIME"
-                }
-              ]
+              "severity": "PSC_ENOPT_ALL_CORES/PSC_EXECUTION_TIME"
             }
           ]
         },
@@ -363,20 +311,14 @@
               "name": "PSC_ENOPT_ALL_DRAMS:  Provides energy consumption of DRAM modules on a node."
             },
             {
-              "name": "severity",
-              "_children": [
-                {
-                  "name": "PSC_EXECUTION_TIME/PSC_INSTANCES"
-                }
-              ]
+              "severity": "PSC_EXECUTION_TIME/PSC_INSTANCES"
             }
           ]
         }
       ]
     },
     {
-      "name": "GPUTesting",
-      "type": "Class",
+      "class": "GPUTesting",
       "_children": [
         {
           "name": "CUDA_ACHIEVEDOCCUPANCY: Total number of cycles a multiprocessor has at least one active warp",
@@ -388,12 +330,7 @@
               "name": "PSC_CUPTI_DD_ACTIVE_WARPS"
             },
             {
-              "name": "severity",
-              "_children" :[
-                {
-                  "name":"100*(PSC_CUPTI_DD_ACTIVE_WARPS/PSC_CUPTI_DD_ACTIVE_CYCLES)/48"
-                }
-              ]
+              "severity":"100*(PSC_CUPTI_DD_ACTIVE_WARPS/PSC_CUPTI_DD_ACTIVE_CYCLES)/48"
             }
           ]
         },
@@ -499,8 +436,7 @@
       ]
     },
     {
-      "name": "mpi",
-      "type": "Class",
+      "class": "mpi",
       "_children": [
         {
           "name": "EAGERLIMITDEPENDENT",
@@ -621,8 +557,7 @@
       ]
     },
     {
-      "name": "OpenCL",
-      "type": "Class",
+      "class": "OpenCL",
       "_children": [
         {
           "name": "OPENCL_KERNELEXECTIME: total amount of time spent on kernel execution",
@@ -643,8 +578,7 @@
       ]
     },
     {
-      "name": "openmp",
-      "type": "Class",
+      "class": "openmp",
       "_children": [
         {
           "name": " CRITICALREGIONOVERHEAD_OMPREGION: critical section overhead",
@@ -985,8 +919,7 @@
       ]
     },
     {
-      "name": "overhead",
-      "type": "Class",
+      "class": "overhead",
       "_children": [
         {
           "name": "OVERHEAD: High Instrumentation overhead-Itanium2"
@@ -1028,8 +961,7 @@
       ]
     },
     {
-      "name": "Pipeline",
-      "type": "Class",
+      "class": "Pipeline",
       "_children": [
         {
           "name": "PIPESTAGEEXECTIME: Execution time of pipeline stage for Vienna pattern",
@@ -1058,8 +990,7 @@
       ]
     },
     {
-      "name": "tuning",
-      "type": "Class",
+      "class": "tuning",
       "_children": [
         {
           "name": "EXECTIME: Return the execution time of the region in thread 0",
