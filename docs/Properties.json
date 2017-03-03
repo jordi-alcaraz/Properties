@@ -341,12 +341,7 @@
               "name": "PSC_CUPTI_DD_ACTIVE_CYCLES"
             },
             {
-              "name": "severity",
-              "_children":[
-                {
-                  "name": "PSC_CUPTI_DD_ACTIVE_CYCLES"
-                }
-              ]
+              "severity": "PSC_CUPTI_DD_ACTIVE_CYCLES"
             }
           ]
         },
@@ -360,12 +355,7 @@
               "name": "PSC_CUPTI_DD_BRANCH"
             },
             {
-              "name": "severity",
-              "_children":[
-                {
-                  "name": "(PSC_CUPTI_DD_BRANCH-PSC_CUPTI_DD_DIVERGENT_BRANCH )/ PSC_CUPTI_DD_BRANCH"
-                }
-              ]
+              "severity": "(PSC_CUPTI_DD_BRANCH-PSC_CUPTI_DD_DIVERGENT_BRANCH )/ PSC_CUPTI_DD_BRANCH"
             }
           ]
         },
@@ -376,12 +366,7 @@
               "name": "PSC_CUDA_BYTES_TRANSFERRED"
             },
             {
-              "name": "severity",
-              "_children":[
-                {
-                  "name": "PSC_CUDA_BYTES_TRANSFERRED"
-                }
-              ]
+              "severity": "PSC_CUDA_BYTES_TRANSFERRED"
             }
           ]
         },
@@ -392,12 +377,7 @@
               "name": "PSC_CUDA_KERNEL_EXECUTION_TIME"
             },
             {
-              "name":"severity",
-              "_children":[
-                {
-                  "name": "PSC_CUDA_KERNEL_EXECUTION_TIME"
-                }
-              ]
+              "severity":  "PSC_CUDA_KERNEL_EXECUTION_TIME"
             }
           ]
         },
@@ -408,12 +388,7 @@
               "name": "PSC_CUPTI_DD_INST_EXECUTED"
             },
             {
-              "name": "severity",
-              "_children":[
-                {
-                  "name": "PSC_CUPTI_DD_INST_EXECUTED"
-                }
-              ]
+              "severity": "PSC_CUPTI_DD_INST_EXECUTED"
             }
           ]
         },
@@ -424,12 +399,7 @@
               "name": "PSC_CUDA_TRANSFER_EXECUTION_TIME"
             },
             {
-              "name": "severity",
-              "_children":[
-                {
-                  "name": "PSC_CUDA_TRANSFER_EXECUTION_TIME" 
-                }
-              ]
+              "severity": "PSC_CUDA_TRANSFER_EXECUTION_TIME" 
             }
           ]
         }
@@ -469,12 +439,7 @@
               "name": "PSC_MPI_MSG_FREQ_64K"
             },
             {
-              "name": "severity",
-              "_children":[
-                {
-                  "name": "PSC_MPI_MSG_P2P_THR/PSC_MPI_MSG_P2P_TOT"
-                }
-              ]
+              "severity": "PSC_MPI_MSG_P2P_THR/PSC_MPI_MSG_P2P_TOT"
             }
           ]
         },
@@ -488,11 +453,7 @@
               "name": "PSC_EXECUTION_TIME: Execution time"
             },
             {
-              "name": "severity",
-              "_children":[
-                {
-                  "name": "PSC_EXECUTION_TIME-Phase/PSC_MPI_TIME_SPENT"
-                }]
+              "severity": "PSC_EXECUTION_TIME-Phase/PSC_MPI_TIME_SPENT"
             }
 
           ]
@@ -507,12 +468,7 @@
               "name": "PSC_EXECUTION_TIME: Execution time"
             },
             {
-              "name":"severity",
-              "_children":[
-                {
-                  "name": "Late time*100/PSC_EXECUTION_TIME"
-                }
-              ]
+              "severity":  "Late time*100/PSC_EXECUTION_TIME"
             }
           ]
         },
@@ -526,12 +482,7 @@
               "name": "PSC_EXECUTION_TIME"
             },
             {
-              "name":"severity",
-              "_children":[
-                {
-                  "name": "Late time*100/PSC_EXECUTION_TIME"
-                }
-              ]
+              "severity":  "Late time*100/PSC_EXECUTION_TIME"
             }
           ]
         },
@@ -545,12 +496,7 @@
               "name": "PSC_EXECUTION_TIME"
             },
             {
-              "name":"severity",
-              "_children":[
-                {
-                  "name": "PSC_MPI_TIME_SPENT*100/PSC_EXECUTION_TIME"
-                }
-              ]
+              "severity":  "PSC_MPI_TIME_SPENT*100/PSC_EXECUTION_TIME"
             }
           ]
         }
@@ -566,12 +512,7 @@
               "name": "PSC_OPENCL_KERNEL_EXECUTION_TIME"
             },
             {
-              "name": "severity",
-              "_children":[
-                {
-                  "name": "PSC_OPENCL_KERNEL_EXECUTION_TIME"
-                }
-              ]
+              "severity": "PSC_OPENCL_KERNEL_EXECUTION_TIME"
             }
           ]
         }
@@ -602,6 +543,9 @@
             },
             {
               "name": "PSC_CRITICAL_REGION_CYCLE"
+            },
+            {
+              "severity":"Critical time in %"
             }
           ]
         },
@@ -613,6 +557,9 @@
             },
             {
               "name": "PSC_CRITICAL_REGION_CYCLE"
+            },
+            {
+              "severity":"Critical time in %"
             }
           ]
         },
@@ -624,17 +571,51 @@
             },
             {
               "name": "PSC_CRITICAL_REGION_CYCLE"
+            },
+            {
+              "severity":"(maxWaitTime-minWaitTime)/PSC_EXECUTION_TIME*100"
             }
           ]
         },
         {
-          "name": " LOADIMBALANCEPARALLELSECTION: Load Imbalance in Parallel Sections",
+          "name": " LOADIMBALANCEPARALLELSECTION : Load Imbalance in Parallel Sections",
           "_children": [
             {
               "name": "PSC_EXECUTION_TIME"
             },
             {
               "name": "PSC_IMPLICIT_BARRIER_TIME"
+            },
+            {
+              "severity":"(maxWaitTime-minWaitTime)/PSC_EXECUTION_TIME*100"
+            }
+          ]
+        },
+        {
+          "name": " UNEVEN_SECTION_OMP : Load Imbalance in Parallel Sections",
+          "_children": [
+            {
+              "name": "PSC_EXECUTION_TIME"
+            },
+            {
+              "name": "PSC_IMPLICIT_BARRIER_TIME"
+            },
+            {
+              "severity":"(maxWaitTime-minWaitTime)/PSC_EXECUTION_TIME*100"
+            }
+          ]
+        },
+        {
+          "name": " NOT_ENOUGH_SECTION_OMP : Load Imbalance in Parallel Sections",
+          "_children": [
+            {
+              "name": "PSC_EXECUTION_TIME"
+            },
+            {
+              "name": "PSC_IMPLICIT_BARRIER_TIME"
+            },
+            {
+              "severity":"(maxWaitTime-minWaitTime)/PSC_EXECUTION_TIME*100"
             }
           ]
         },
@@ -646,6 +627,9 @@
             },
             {
               "name": "PSC_OMP_BARRIER_CYCLE"
+            },
+            {
+              "severity":"(maxWaitTime-minWaitTime)/PSC_EXECUTION_TIME*100"
             }
           ]
         },
@@ -657,6 +641,9 @@
             },
             {
               "name": "PSC_IMPLICIT_BARRIER_TIME"
+            },
+            {
+              "severity":"(maxWaitTime-minWaitTime)/PSC_EXECUTION_TIME*100"
             }
           ]
         },
@@ -668,6 +655,9 @@
             },
             {
               "name": "PSC_IMPLICIT_BARRIER_TIME"
+            },
+            {
+              "severity":"(maxWaitTime-minWaitTime)/PSC_EXECUTION_TIME*100"
             }
           ]
         },
@@ -679,6 +669,9 @@
             },
             {
               "name": "PSC_IMPLICIT_BARRIER_TIME"
+            },
+            {
+              "severity":"(maxWaitTime-minWaitTime)/PSC_EXECUTION_TIME*100"
             }
           ]
         },
@@ -690,6 +683,9 @@
             },
             {
               "name": "PSC_IMPLICIT_BARRIER_TIME"
+            },
+            {
+              "severity":"(maxWaitTime-minWaitTime)/PSC_EXECUTION_TIME*100"
             }
           ]
         },
@@ -701,6 +697,9 @@
             },
             {
               "name": "PSC_IMPLICIT_BARRIER_TIME"
+            },
+            {
+              "severity":"(maxWaitTime-minWaitTime)/PSC_EXECUTION_TIME*100"
             }
           ]
         },
@@ -715,6 +714,9 @@
             },
             {
               "name": "PSC_PARALLEL_REGION_BODY_CYCLE"
+            },
+            {
+              "severity":"(PSC_PARALLEL_REGION_CYCLE-PSC_PARALLEL_REGION_BODY_CYCLE)/PSC_EXECUTION_TIME*100"
             }
           ]
         },
@@ -726,6 +728,9 @@
             },
             {
               "name": "PSC_CRITICAL_REGION_CYCLE"
+            },
+            {
+              "severity": "maxWaitTime/PSC_EXECUTION_TIME*100"
             }
           ]
         },
@@ -737,6 +742,9 @@
             },
             {
               "name": "PSC_MASTER_BODY_CYCLE"
+            },
+            {
+              "severity": "PSC_MASTER_BODY_CYCLE/PSC_EXECUTION_TIME*100"
             }
           ]
         },
@@ -748,6 +756,9 @@
             },
             {
               "name": "PSC_ORDERED_REGION_CYCLE"
+            },
+            {
+              "severity": "sum(PSC_ORDERED_REGION_CYCLE)/PSC_EXECUTION_TIME*100"
             }
           ]
         },
@@ -759,6 +770,9 @@
             },
             {
               "name": "PSC_SINGLE_REGION_CYCLE"
+            },
+            {
+              "severity": "PSC_SINGLE_REGION_CYCLE/PSC_EXECUTION_TIME*100"
             }
           ]
         },
@@ -767,6 +781,9 @@
           "_children": [
             {
               "name": "PSC_EXECUTION_TIME"
+            },
+            {
+              "severity": "PSC_EXECUTION_TIME/PSC_EXECUTION_TIME*100"
             }
           ]
         },
@@ -775,6 +792,9 @@
           "_children": [
             {
               "name": "PSC_EXECUTION_TIME"
+            },
+            {
+              "severity": "PSC_EXECUTION_TIME/PSC_EXECUTION_TIME*100"
             }
           ]
         },
@@ -783,6 +803,9 @@
           "_children": [
             {
               "name": "PSC_EXECUTION_TIME"
+            },
+            {
+              "severity": "max(PSC_EXECUTION_TIME_threads)/PSC_EXECUTION_TIME*100"
             }
           ]
         },
@@ -791,6 +814,9 @@
           "_children": [
             {
               "name": "PSC_EXECUTION_TIME"
+            },
+            {
+              "severity": "PSC_EXECUTION_TIME-region/PSC_EXECUTION_TIME*100"
             }
           ]
         },
@@ -799,6 +825,9 @@
           "_children": [
             {
               "name": "PSC_OMP_DO_REGION_CYCLE"
+            },
+            {
+              "severity": "max(PSC_EXECUTION_TIME_threads)/PSC_EXECUTION_TIME*100"
             }
           ]
         },
@@ -807,6 +836,9 @@
           "_children": [
             {
               "name": "PSC_PARALLEL_REGION_CYCLE"
+            },
+            {
+              "severity": "PSC_PARALLEL_REGION_CYCLE/PSC_EXECUTION_TIME*100"
             }
           ]
         },
@@ -821,6 +853,9 @@
             },
             {
               "name": "PSC_TASK_REGION_BODY_CYCLE"
+            },
+            {
+              "severity": "sum(PSC_TASK_REGION_CYCLE_thread)/PSC_EXECUTION_TIME*100"
             }
           ]
         },
@@ -832,6 +867,9 @@
             },
             {
               "name": "PSC_TASK_REGION_CYCLE"
+            },
+            {
+              "severity": "(sum(PSC_TASK_REGION_CYCLE)-sum(PSC_TASK_REGION_BODY_CYCLE))/PSC_EXECUTION_TIME*100"
             }
           ]
         },
@@ -843,6 +881,9 @@
             },
             {
               "name": "PSC_TASK_REGION_CYCLE"
+            },
+            {
+              "severity": "max(PSC_TASK_REGION_CYCLE_thread)/PSC_EXECUTION_TIME*100"
             }
           ]
         },
@@ -857,6 +898,9 @@
             },
             {
               "name": "PSC_TASK_REGION_BODY_CYCLE"
+            },
+            {
+              "severity": "max(PSC_TASK_REGION_CYCLE_thread)/PSC_EXECUTION_TIME*100"
             }
           ]
         },
@@ -871,6 +915,9 @@
             },
             {
               "name": "PSC_TASK_REGION_BODY_CYCLE"
+            },
+            {
+              "severity": "avg(max(PSC_TASK_REGION_BODY_CYCLE)-Time_thread)/PSC_EXECUTION_TIME*100"
             }
           ]
         },
@@ -885,6 +932,9 @@
             },
             {
               "name": "PSC_TASK_REGION_BODY_CYCLE"
+            },
+            {
+              "severity": "avg(max(???)-Time_thread)/PSC_EXECUTION_TIME*100"
             }
           ]
         },
@@ -899,20 +949,9 @@
             },
             {
               "name": "PSC_TASK_REGION_BODY_CYCLE"
-            }
-          ]
-        },
-        {
-          "name": " IMBALANCEDTASKREGION: Task region with imbalanced distribution ",
-          "_children": [
-            {
-              "name": "PSC_EXECUTION_TIME"
             },
             {
-              "name": "PSC_TASK_REGION_CYCLE"
-            },
-            {
-              "name": "PSC_TASK_REGION_BODY_CYCLE"
+              "severity": "avg(max(PSC_TASK_REGION_BODY_CYCLE)-Time_thread)/PSC_EXECUTION_TIME*100"
             }
           ]
         }
@@ -938,6 +977,9 @@
             },
             {
               "name": "PSC_PAPI_TOT_CYC"
+            },
+            {
+              "severity": "(PSC_MRI_OVERHEAD-PSC_MRI_EXCL_OVERHEAD)/PSC_PAPI_TOT_CYC*100"
             }
           ]
         },
@@ -955,6 +997,9 @@
             },
             {
               "name": "PSC_PAPI_TOT_CYC - Outside region"
+            },
+            {
+              "severity": "PSC_MRI_EXCL_OVERHEAD/PSC_PAPI_TOT_CYC*100"
             }
           ]
         }
@@ -968,6 +1013,9 @@
           "_children": [
             {
               "name": "PSC_PIPE_STAGEEXEC_TIME"
+            },
+            {
+              "severity": "PSC_PIPE_STAGEEXEC_TIME/NANOSEC_PER_SEC_DOUBLE"
             }
           ]
         },
@@ -976,6 +1024,9 @@
           "_children": [
             {
               "name": "PSC_PIPE_BUFOUTP_TIME"
+            },
+            {
+              "severity": "PSC_PIPE_BUFOUTP_TIME/NANOSEC_PER_SEC_DOUBLE"
             }
           ]
         },
@@ -984,6 +1035,9 @@
           "_children": [
             {
               "name": "PSC_PIPE_EXEC_TIME"
+            },
+            {
+              "severity": "PSC_PIPE_EXEC_TIME/NANOSEC_PER_SEC_DOUBLE"
             }
           ]
         }
@@ -997,6 +1051,9 @@
           "_children": [
             {
               "name": "PSC_EXECUTION_TIME"
+            },
+            {
+              "severity": "PSC_EXECUTION_TIME"
             }
           ]
         },
@@ -1020,6 +1077,9 @@
             },
             {
               "name": "PSC_ENOPT_ALL_DRAMS"
+            },
+            {
+              "severity": "PSC_EXECUTION_TIME/PSC_INSTANCES"
             }
           ]
         },
@@ -1028,6 +1088,9 @@
           "_children": [
             {
               "name": "PSC_CUPTI_DD_ACTIVE_CYCLES"
+            },
+            {
+              "severity": "PSC_CUPTI_DD_ACTIVE_CYCLES"
             }
           ]
         }
